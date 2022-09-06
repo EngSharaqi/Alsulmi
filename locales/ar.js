@@ -3,5 +3,10 @@ export default {
     aboutus: 'من نحن',
     services: 'خدماتنا',
     contactus: 'تواصل معنا',
-    blog: 'المدونة'
+    blog: 'المدونة',
+    title: {
+        home: 'الصفحة الرئيسية | السلمي',
+        aboutus: 'من نحن | السلمي',
+        services: 'خدماتنا | السلمي'
+    }
 }

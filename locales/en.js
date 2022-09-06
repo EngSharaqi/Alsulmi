@@ -3,5 +3,10 @@ export default {
     aboutus: 'About us',
     services: 'Services',
     contactus: 'Contact us',
-    blog: 'Blog'
+    blog: 'Blog',
+    title: {
+        home: 'Home | Alsulmi',
+        aboutus: 'About us | Alsulmi',
+        services: 'Services | Alsulmi'
+    }
 }
