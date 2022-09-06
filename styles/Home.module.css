@@ -26,8 +26,10 @@
 }
 
 /* Media */
-@media(max-width: 767px){
+@media(max-width: 768px){
+  .banner .custReverse { flex-direction: column-reverse !important; text-align: center }
   .banner h1 { font-size: 1.3rem }
   .banner p { font-size: .7rem }
   .banner a button { font-size: .7rem; min-width: 80px }
+
 }

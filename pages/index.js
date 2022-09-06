@@ -7,6 +7,8 @@ import { useRouter } from "next/router";
 import en from '../locales/en';
 import ar from '../locales/ar';
 
+import banner_img from '../public/images/banner_logo.png'
+
 export default function Home() {
   var router = useRouter();
   let t = router.locale === 'en' ? en : ar;
@@ -26,8 +28,8 @@ export default function Home() {
               <div className='container' style={{'height': 'inherit'}}>
                 <div className={`row`} style={{'height': '66%'}}>
                   <section>
-                    <div className='row'>
-                    <div className={`col-xs-12 col-sm-12 col-md-7 col-lg-8`}>
+                    <div className={`row ${main.custReverse}`}>
+                    <div className={`col-xs-12 col-sm-12 col-md-8 col-lg-8`}>
                         <h1>Our main principle prevailing is</h1>
                         <p>Reaching clients to the goal that they aspire to have a trained and specialized staff that understands the needs of each individual client</p>
                         <Link href="/">
@@ -37,8 +39,8 @@ export default function Home() {
                           </a>
                         </Link>
                       </div>
-                      <div className={`col-xs-12 col-sm-12 col-md-5 col-lg-4`}>
-                        test
+                      <div className={`col-xs-12 col-sm-12 col-md-4 col-lg-4`}>
+                        <img src={banner_img.src} style={{"max-width": "100%", "margin-bottom": "20px"}} />
                       </div>
                     </div>
                   </section>
