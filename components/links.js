@@ -18,7 +18,6 @@ export default function Links() {
         e.preventDefault();
     }
     return (
-
         <>
             <ul class={`navbar-nav ml-auto mt-2 mt-lg-0 ${main.fUL}`}>
                
@@ -27,25 +26,25 @@ export default function Links() {
                         <a class="nav-link">{t.home}</a>
                     </Link>
                 </li>
-                <li>
+                <li className={router.pathname == "/aboutus" ? `nav-item ${main.active}` : "nav-item"}>
                     <Link href="/Aboutus">
                         <a class="nav-link">{t.aboutus}</a>
                     </Link>
                 </li>
 
-                <li>
+                <li className={router.pathname == "/services" ? `nav-item ${main.active}` : "nav-item"}>
                     <Link href="/services">
                         <a class="nav-link">{t.services}</a>
                     </Link>
                 </li>
 
-                <li>
+                <li className={router.pathname == "/contactus" ? `nav-item ${main.active}` : "nav-item"}>
                     <Link href="/contactus">
                         <a class="nav-link">{t.contactus}</a>
                     </Link>
                 </li>
 
-                <li>
+                <li className={router.pathname == "/blog" ? `nav-item ${main.active}` : "nav-item"}>
                     <Link href="/blog">
                         <a class="nav-link">{t.blog}</a>
                     </Link>
@@ -54,7 +53,7 @@ export default function Links() {
                 <li>
                     <a class="nav-link">
                         <form onClick={handleForm}>
-                            <input onClick={handleLang} class={`btn btn-primary ${main.lang_btn}`} type='submit' value={router.locale === 'en' ? 'ar' : 'en'} />
+                            <input type='submit' onClick={handleLang} class={`btn btn-primary ${main.lang_btn}`} value={router.locale === 'en' ? 'ar' : 'en'} />
                         </form>
                     </a>
                 </li>
