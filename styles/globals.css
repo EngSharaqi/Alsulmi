@@ -1,3 +1,8 @@
+:root {
+  --active: #003AA5;
+  --inActive: #9BBEFF
+}
+
 html,
 body {
   padding: 0;
@@ -13,6 +18,7 @@ a {
 
 * {
   box-sizing: border-box;
+  transition: .5s all ease-in-out
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,0 +1,17 @@
+.fUL a { color: var(--inActive) !important }
+
+.fUL a:hover {
+    color: var(--active) !important;
+    /* font-weight: bold */
+}
+
+.fUL .active a {
+    color: var(--active) !important;
+    font-weight: bold
+}
+
+.lang_btn {
+    padding: 0 10px 2px;
+    height: auto;
+    margin-left: 25px
+}
