@@ -1,5 +1,14 @@
 {
   "name": "alsulmi",
+  "author": {
+    "name": "Mohamed Abdelhamid Sharaqi",
+    "contacts": {
+      "LinkedIn": "https://www.linkedin.com/in/engsharaqi",
+      "Github": "https://github.com/EngSharaqi",
+      "Email": "muhammadsharaqi@gmail.com",
+      "Whatsapp Business": "+201030692427"
+    }
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
