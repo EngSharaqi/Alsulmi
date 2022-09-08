@@ -225,10 +225,15 @@ export default function Home() {
                 <small>I wonder why I haven't contacted this office before! Seriously, they all have a commendable talent in their respective fields Thanks for this amazing experience!</small>
               </div>
             </div>
-
           </div>
         </div>
       </div>
+
+      {/* Team members */}
+
+      {/* Parteners */}
+
+      
     </>
   )
 }

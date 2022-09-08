@@ -82,6 +82,9 @@
 .free_service h4 { color: #fff }
 
 /* Testemonials */
+
+.testemonials { margin-bottom: calc(3rem - 15px) } 
+
 .testemonials .card {
   height: 100%;
   text-align: center;
