@@ -1,3 +1,4 @@
+/* banner */
 .banner .img {
   background-image: url('../public/images/overlay-img.jpg');
   width: 100%;
@@ -25,11 +26,49 @@
   min-width: 100px
 }
 
-/* Media */
+.banner a { text-decoration: none }
+ 
+.btn_srvs { background-color: transparent }
+
+.btn_srvs:hover { background-color: #007bff }
+
+/* overview */
+.overview, .our_value { margin: 3rem 0 0 0 } /* row margins */
+
+.overview .btn_srvs a {
+  color: #007bff;
+  text-decoration: none
+}
+
+.overview .btn_srvs:hover a { color: #fff }
+
+.overview img { max-width: 100% }
+
+/* Our value */
+.our_value {
+  background-color: #001130;
+  padding: 3rem 0 1.5rem;
+  color: #fff;
+  text-align: center
+}
+
+.our_value h4 {
+  width: 100%
+}
+
+.our_value h6 + p { margin-bottom: 2rem; font-size: .9rem }
+
+/*  ==== Media ==== */
+/* banner */
 @media(max-width: 768px){
   .banner .custReverse { flex-direction: column-reverse !important; text-align: center }
   .banner h1 { font-size: 1.3rem }
   .banner p { font-size: .7rem }
-  .banner a button { font-size: .7rem; min-width: 80px }
+  .banner a button, .overview button { font-size: .7rem; min-width: 80px }
 
+  .overview .column { flex-direction: column-reverse }
+  .overview h4 { font-size: 1rem }
+  .overview p { font-size: .8rem }
 }
+
+/* our value */

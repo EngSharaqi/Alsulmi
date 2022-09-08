@@ -8,6 +8,7 @@ import en from '../locales/en';
 import ar from '../locales/ar';
 
 import banner_img from '../public/images/banner_logo.png'
+import overview from '../public/images/overview.svg'
 
 export default function Home() {
   var router = useRouter();
@@ -25,22 +26,22 @@ export default function Home() {
         <div className='row'>
           <div className={main.img}>
             <div className={main.cover}>
-              <div className='container' style={{'height': 'inherit'}}>
-                <div className={`row`} style={{'height': '66%'}}>
+              <div className='container' style={{ 'height': 'inherit' }}>
+                <div className={`row`} style={{ 'height': '66%' }}>
                   <section>
                     <div className={`row ${main.custReverse}`}>
-                    <div className={`col-xs-12 col-sm-12 col-md-8 col-lg-8`}>
+                      <div className={`col-xs-12 col-sm-12 col-md-8 col-lg-8`}>
                         <h1>Our main principle prevailing is</h1>
                         <p>Reaching clients to the goal that they aspire to have a trained and specialized staff that understands the needs of each individual client</p>
                         <Link href="/">
                           <a>
                             <button className={`btn btn-primary`}>Contact us</button>
-                            <button className={`btn btn-primary`}>Services</button>
+                            <button className={`btn btn-primary ${main.btn_srvs}`}>Services</button>
                           </a>
                         </Link>
                       </div>
                       <div className={`col-xs-12 col-sm-12 col-md-4 col-lg-4`}>
-                        <img src={banner_img.src} style={{"max-width": "100%", "margin-bottom": "20px"}} />
+                        <img src={banner_img.src} style={{ "max-width": "100%", "margin-bottom": "20px" }} />
                       </div>
                     </div>
                   </section>
@@ -50,6 +51,65 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </>   
+
+      {/* Overview section */}
+      <div className={`row ${main.overview}`}>
+        <div className='container'>
+          <div className={`row ${main.column}`}>
+            <div className={`col-xs-12 col-sm-12 col-md-8 col-lg-8`}>
+              <h4>An overview of Ibrahim Al-Sulami's office</h4>
+              <p>Ibrahim Al Sulami Office is accountants and certified auditors one of the best auditing and accounting companies in the Kingdom of Saudi Arabia, where we provide financial, accounting and tax consulting services, auditing and auditing, internal audit of companies and bookkeeping accounting. We aim to enhance customer added value by providing distinguished financial, administrative and technical services in the aforementioned fields of work. Accounting is the basis for any successful business</p>
+              <button className={`btn btn-primary ${main.btn_srvs}`}>
+                <a href='/'>Read more</a>
+              </button>
+            </div>
+            <div className={`col-xs-12 col-sm-12 col-md-4 col-lg-4`}>
+              <img src={overview.src} style={{ "max-width": "100%", "margin-bottom": "20px" }} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Our Value  */}
+      <div className={`row ${main.our_value}`}>
+        <div className='container'>
+          <div className='row'>
+            <div className='row'>
+              <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+                <h4>Our Value</h4>
+                <p>We work for you towards continuous progress and development. We firmly believe in the pursuit of excellence. We join a wonderful team of distinguished accountants and auditors, specialists and qualified to provide excellent financial, administrative and tax services. We are experienced in eliminating the storms that threaten them and identifying weaknesses that must be focused on and not overlooked. Our motto is confidence, excellence, challenge.</p>
+              </div>
+            </div>
+            <div className='row'>
+              <div className='col-xs-12 col-sm-6 col-md-4 col-lg-4'>
+                <h6>Empowerment</h6>
+                <p>We give the authority to our employees so that they can provide all customer services without going back to higher levels.</p>
+              </div>
+              <div className='col-xs-12 col-sm-6 col-md-4 col-lg-4'>
+                <h6>Respect the time</h6>
+                <p>We provide clients with a schedule that we stick to, and that prompts us to be more effective and focused on achieving the goal.</p>
+              </div>
+              <div className='col-xs-12 col-sm-6 col-md-4 col-lg-4'>
+                <h6>Honesty</h6>
+                <p>We adhere to the privacy policy of every client and take a sophisticated ethical course on the individual and team level.</p>
+              </div>
+
+              <div className='col-xs-12 col-sm-6 col-md-4 col-lg-4'>
+                <h6>Employee loyalty</h6>
+                <p className={`${main.p}`}>Encouraging and rewarding creative and distinguished people and putting the right person in the right place.</p>
+              </div>
+              <div className='col-xs-12 col-sm-6 col-md-4 col-lg-4'>
+                <h6>Team work</h6>
+                <p className={`${main.p}`}>Our motto The word "we" is more important than the word "I" and we attribute our success to the entire team and not to a specific employee.</p>
+              </div>
+              <div className='col-xs-12 col-sm-6 col-md-4 col-lg-4'>
+                <h6>Perseverance</h6>
+                <p className={`${main.p}`}>Success does not come by chance, but rather is the result of achieving all the goals and aspirations of customers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }

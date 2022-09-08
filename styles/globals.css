@@ -3,6 +3,10 @@
   --inActive: #9BBEFF
 }
 
+html[lang="ar"] body {
+  direction: rtl
+}
+
 html,
 body {
   padding: 0;
