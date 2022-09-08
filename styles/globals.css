@@ -3,6 +3,7 @@
   --inActive: #9BBEFF
 }
 
+::selection { background-color: #007bff }
 html[lang="ar"] body {
   direction: rtl
 }

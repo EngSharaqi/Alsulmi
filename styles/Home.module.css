@@ -1,4 +1,4 @@
-.overview, .our_value, .our_services, .free_service { margin: 3rem 0 0 0 } /* row margins */
+.overview, .our_value, .our_services, .free_service, .testemonials { margin: 3rem 0 0 0 } /* row margins */
 
 /* banner */
 .banner .img {
@@ -80,6 +80,28 @@
 }
 
 .free_service h4 { color: #fff }
+
+/* Testemonials */
+.testemonials .card {
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  margin: 0 0 10px 0;
+  padding: 1.5rem;
+  justify-content: start;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 5px #cdcdcd;
+  border: 0
+}
+
+.testemonials .card:hover { transform: translate(0, -10px) }
+
+.testemonials h4 { text-align: center }
+
+.testemonials h5, .testemonials p { width: 100% }
+
+.testemonials h5, .testemonials p, .testemonials small { text-align: left }
+
 /*  ==== Media ==== */
 /* banner */
 @media(max-width: 768px){

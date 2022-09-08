@@ -114,9 +114,9 @@ export default function Home() {
       {/* Our Services */}
       <div className={`row ${main.our_services}`}>
         <div className='container'>
-            <h4>Our Services</h4>
+          <h4>Our Services</h4>
           <div className='row'>
-          <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{'padding': '5px'}}>
+            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
               <div className={`card ${main.card}`}>
                 <p>
                   <i class="fas fa-file-invoice-dollar"></i>
@@ -124,7 +124,7 @@ export default function Home() {
                 <h6>Value Added Services</h6>
               </div>
             </div>
-            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{'padding': '5px'}}>
+            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
               <div className={`card ${main.card}`}>
                 <p>
                   <i class="fas fa-search-dollar"></i>
@@ -132,7 +132,7 @@ export default function Home() {
                 <h6>Internal audit</h6>
               </div>
             </div>
-            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{'padding': '5px'}}>
+            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
               <div className={`card ${main.card}`}>
                 <p>
                   <i class="fas fa-coins"></i>
@@ -140,7 +140,7 @@ export default function Home() {
                 <h6>Preparing financial statements</h6>
               </div>
             </div>
-            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{'padding': '5px'}}>
+            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
               <div className={`card ${main.card}`}>
                 <p>
                   <i class="fas fa-comment-dollar"></i>
@@ -149,7 +149,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{'padding': '5px'}}>
+            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
               <div className={`card ${main.card}`}>
                 <p>
                   <i class="fas fa-receipt"></i>
@@ -157,7 +157,7 @@ export default function Home() {
                 <h6>Accounting bookkeeping</h6>
               </div>
             </div>
-            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{'padding': '5px'}}>
+            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
               <div className={`card ${main.card}`}>
                 <p>
                   <i class="fas fa-university"></i>
@@ -165,7 +165,7 @@ export default function Home() {
                 <h6>Financial consulting</h6>
               </div>
             </div>
-            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{'padding': '5px'}}>
+            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
               <div className={`card ${main.card}`}>
                 <p>
                   <i class="fas fa-desktop"></i>
@@ -173,7 +173,7 @@ export default function Home() {
                 <h6>Accounting software</h6>
               </div>
             </div>
-            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{'padding': '5px'}}>
+            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
               <div className={`card ${main.card}`}>
                 <p>
                   <i class="fas fa-hand-holding-usd"></i>
@@ -184,7 +184,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-    
+
       {/* Free services */}
       <div className={`row ${main.banner} ${main.free_service}`}>
         <div className={main.img}>
@@ -192,13 +192,43 @@ export default function Home() {
             <div className='container'>
               <div className={`row`}>
                 <h4>Free Services</h4>
-                <p>The best offers suitable for your circumstances. Share the offers with relatives and specialists
-Ibrahim Al-Sulami’s office started providing its activities in various legal accounting and auditing services in effective ways that keep pace with all governmental requirements of companies and institutions, which all establishments in the Kingdom of Saudi Arabia aspire to. At Ibrahim Al Sulami Office, we strive to achieve the accounting and auditing goals with the best standards of performance, quality, reliability, and responsibility, which made us, by the grace of God, keep on continuing to deal with many important partnerships we have.</p>
+                <p>The best offers suitable for your circumstances. Share the offers with relatives and specialists Ibrahim Al-Sulami’s office started providing its activities in various legal accounting and auditing services in effective ways that keep pace with all governmental requirements of companies and institutions, which all establishments in the Kingdom of Saudi Arabia aspire to. At Ibrahim Al Sulami Office, we strive to achieve the accounting and auditing goals with the best standards of performance, quality, reliability, and responsibility, which made us, by the grace of God, keep on continuing to deal with many important partnerships we have.</p>
               </div>
             </div>
           </div>
         </div>
-      </div>   
+      </div>
+
+      {/* Testimonials */}
+      <div className={`row ${main.testemonials}`}>
+        <div class='container'>
+          <div className='row'>
+            <h4>Testemonials</h4>
+            <div className='col-xs-12 col-sm-12 col-md-4 col-lg-4' style={{ 'margin-bottom': '15px' }}>
+              <div className={`card ${main.card}`}>
+                <h5>Mohamed Hegazy</h5>
+                <p>CEO, Owl Eyes</p>
+                <small>By far the best team I've ever worked with. They really understood what I was aiming for and they totally did! Simply this is one of the best accounting firms and offices ever</small>
+              </div>
+            </div>
+            <div className='col-xs-12 col-sm-12 col-md-4 col-lg-4' style={{ 'margin-bottom': '15px' }}>
+              <div className={`card ${main.card}`}>
+                <h5>Abo Rakan</h5>
+                <p>Product Manager, Trophyhouse</p>
+                <small>It was really fun getting to know the team during the project. They all helped me answer my questions and made me feel very comfortable. The work finished with twice the quality I had imagined!</small>
+              </div>
+            </div>
+            <div className='col-xs-12 col-sm-12 col-md-4 col-lg-4' style={{ 'margin-bottom': '15px' }}>
+              <div className={`card ${main.card}`}>
+                <h5>Ayman Ismael</h5>
+                <p>Co founder, Coffee Inc</p>
+                <small>I wonder why I haven't contacted this office before! Seriously, they all have a commendable talent in their respective fields Thanks for this amazing experience!</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </>
   )
 }
