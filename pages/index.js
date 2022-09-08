@@ -184,6 +184,21 @@ export default function Home() {
           </div>
         </div>
       </div>
+    
+      {/* Free services */}
+      <div className={`row ${main.banner} ${main.free_service}`}>
+        <div className={main.img}>
+          <div className={main.cover}>
+            <div className='container'>
+              <div className={`row`}>
+                <h4>Free Services</h4>
+                <p>The best offers suitable for your circumstances. Share the offers with relatives and specialists
+Ibrahim Al-Sulami’s office started providing its activities in various legal accounting and auditing services in effective ways that keep pace with all governmental requirements of companies and institutions, which all establishments in the Kingdom of Saudi Arabia aspire to. At Ibrahim Al Sulami Office, we strive to achieve the accounting and auditing goals with the best standards of performance, quality, reliability, and responsibility, which made us, by the grace of God, keep on continuing to deal with many important partnerships we have.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
     </>
   )
 }

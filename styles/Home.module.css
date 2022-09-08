@@ -1,4 +1,4 @@
-.overview, .our_value, .our_services { margin: 3rem 0 0 0 } /* row margins */
+.overview, .our_value, .our_services, .free_service { margin: 3rem 0 0 0 } /* row margins */
 
 /* banner */
 .banner .img {
@@ -52,8 +52,6 @@
   text-align: center
 }
 
-.our_value h4, .our_services h4 { width: 100% }
-
 .our_value h6 + p { margin-bottom: 2rem; font-size: .9rem }
 
 /* Our Services */
@@ -71,6 +69,17 @@
 
 .card i { font-size: 2rem; color: #007bff }
 
+/* free service */
+.free_service { text-align: center }
+
+.free_service .cover{ padding: 3rem 0 }
+
+.free_service .img{
+  background-image: url('../public/images/overlayII.jpg');
+  height: initial
+}
+
+.free_service h4 { color: #fff }
 /*  ==== Media ==== */
 /* banner */
 @media(max-width: 768px){
