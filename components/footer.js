@@ -1,4 +1,4 @@
-import logo from '../public/images/logo.png'
+import logo from '../public/images/logo.PNG'
 import main from '../styles/footer.module.css'
 
 export default function Footer() {
