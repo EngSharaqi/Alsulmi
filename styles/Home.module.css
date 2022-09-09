@@ -105,6 +105,69 @@
 
 .testemonials h5, .testemonials p, .testemonials small { text-align: left }
 
+/* Slider */
+.whattheysay img {
+  width: 140px;
+  filter: grayscale(1)
+}
+
+.whattheysay img:hover {
+  filter: unset;
+  cursor: pointer
+}
+
+.whattheysay {
+	width: 100%;
+  background: #fff70012;
+  background:#fff;
+  margin-top: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px
+}
+
+.whattheysay h4 { text-align: center }
+
+.slider {
+	background: transparent !important;
+	box-shadow: unset;
+	height: auto;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+  width: 80%;
+  margin-top: 40px
+}
+
+.slider .slide{
+    margin-right: 15px;
+    max-width: 50%
+}
+
+.slider .slide_track {
+	-webkit-animation: scroll 60s linear infinite;
+	-ms-animation: scroll 60s linear infinite;
+	-moz-animation: scroll 60s linear infinite;
+	-o-animation: scroll 60s linear infinite;
+	animation: scroll 60s linear infinite;
+	/* animation: scroll; */
+	display: -webkit-box;
+	display: flex;
+	width: calc(400px * 8);
+	margin-bottom: 80px;
+	background: transparent !important;
+	height: auto;
+}
+  
+.slider::before, .slider::after {
+    background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+    background: unset;
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+  
 /*  ==== Media ==== */
 /* banner */
 @media(max-width: 768px){
@@ -118,4 +181,21 @@
   .overview p { font-size: .8rem }
 }
 
-/* our value */
+/* Parteners */
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    -moz-transform: translateX(calc(-250px * 7));
+    -ms-transform: translateX(calc(-250px * 7));
+    -o-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}

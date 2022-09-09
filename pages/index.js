@@ -10,6 +10,20 @@ import ar from '../locales/ar';
 import banner_img from '../public/images/banner_logo.png'
 import overview from '../public/images/overview.svg'
 
+// parteners images
+import dell from '../public/images/parteners/dell.png'
+import aldawaa from '../public/images/parteners/Aldawaa-logo.png'
+import aldawaa_pharmacy from '../public/images/parteners/Aldawaa-pharmacy.png'
+import asalet from '../public/images/parteners/Asalet-Elarab.png'
+import atlas from '../public/images/parteners/Atlas-elevators.png'
+import browneagle from '../public/images/parteners/browneagle.png'
+import fullscreen from '../public/images/parteners/full-screen.png'
+import moj from '../public/images/parteners/moj-logo.png'
+import secureEyes from '../public/images/parteners/Secureeyes.png'
+import servicesSolutions from '../public/images/parteners/Services-Solutions.png'
+import sharek from '../public/images/parteners/Sharek.png'
+import spsc from '../public/images/parteners/SPSC.png'
+
 export default function Home() {
   var router = useRouter();
   let t = router.locale === 'en' ? en : ar;
@@ -232,8 +246,155 @@ export default function Home() {
       {/* Team members */}
 
       {/* Parteners */}
+      <div class="row">
+          <div className={main.whattheysay}>
+            <div class="row" id="portfolio">
+              <h4>Parteners</h4>
+            </div>
 
-      
+            <div class="row">
+              <div className={main.slider}>
+                <div class={main.slide_track}>
+                  <div className={main.slide}>
+                    <div className={ main.card + ' ' + main.review}>
+                      <div>
+                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                      </div>
+                      <div className="card-body">
+                        <img src={dell.src} />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={main.slide}>
+                    <div className={ main.card + ' ' + main.review}>
+                      <div>
+                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                      </div>
+                      <div className="card-body">
+                        <img src={aldawaa.src} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className={main.slide}>
+                    <div className={ main.card + ' ' + main.review}>
+                      <div>
+                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                      </div>
+                      <div className="card-body">
+                        <img src={aldawaa_pharmacy.src} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className={main.slide}>
+                    <div className={ main.card + ' ' + main.review}>
+                      <div>
+                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                      </div>
+                      <div className="card-body">
+                        <img src={asalet.src} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className={main.slide}>
+                    <div className={ main.card + ' ' + main.review}>
+                      <div>
+                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                      </div>
+                      <div className="card-body">
+                        <img src={atlas.src} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className={main.slide}>
+                    <div className={ main.card + ' ' + main.review}>
+                      <div>
+                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                      </div>
+                      <div className="card-body">
+                        <img src={browneagle.src} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className={main.slide}>
+                    <div className={ main.card + ' ' + main.review}>
+                      <div>
+                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                      </div>
+                      <div className="card-body">
+                        <img src={fullscreen.src} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className={main.slide}>
+                    <div className={ main.card + ' ' + main.review}>
+                      <div>
+                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                      </div>
+                      <div className="card-body">
+                        <img src={moj.src} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className={main.slide}>
+                    <div className={ main.card + ' ' + main.review}>
+                      <div>
+                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                      </div>
+                      <div className="card-body">
+                        <img src={secureEyes.src} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className={main.slide}>
+                    <div className={ main.card + ' ' + main.review}>
+                      <div>
+                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                      </div>
+                      <div className="card-body">
+                        <img src={servicesSolutions.src} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className={main.slide}>
+                    <div className={ main.card + ' ' + main.review}>
+                      <div>
+                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                      </div>
+                      <div className="card-body">
+                        <img src={sharek.src} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className={main.slide}>
+                    <div className={ main.card + ' ' + main.review}>
+                      <div>
+                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                      </div>
+                      <div className="card-body">
+                        <img src={spsc.src} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+
     </>
   )
 }
