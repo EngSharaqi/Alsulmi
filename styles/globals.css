@@ -34,6 +34,8 @@ a {
 
 h4 { width: 100% }
 
+.whattheysay .card-body{ padding-top: 0 !important }
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

@@ -1,4 +1,4 @@
-.overview, .our_value, .our_services, .free_service, .testemonials { margin: 3rem 0 0 0 } /* row margins */
+.overview, .our_value, .our_services, .free_service, .testemonials, .whattheysay { margin: 3rem 0 0 0 } /* row margins */
 
 /* banner */
 .banner .img {
@@ -113,7 +113,12 @@
 
 .whattheysay img:hover {
   filter: unset;
-  cursor: pointer
+  cursor: pointer;
+  transform: scale(1.2)
+}
+
+.slider .slide_track:hover { 
+  animation-play-state: paused;
 }
 
 .whattheysay {
@@ -135,7 +140,6 @@
 	overflow: hidden;
 	position: relative;
   width: 80%;
-  margin-top: 40px
 }
 
 .slider .slide{
