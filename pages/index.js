@@ -76,7 +76,8 @@ export default function Home() {
       </main>
 
       {/* Overview section */}
-      <div className={`row ${main.overview}`} id='about_us'>
+      <section id='about_us'>
+      <div className={`row ${main.overview}`}>
         <div className='container'>
           <div className={`row ${main.column}`}>
             <div className={`col-xs-12 col-sm-12 col-md-8 col-lg-8`}>
@@ -93,6 +94,7 @@ export default function Home() {
         </div>
       </div>
 
+      </section>
       {/* Our Value  */}
       <div className={`row ${main.our_value}`} id='our_value'>
         <div className='container'>

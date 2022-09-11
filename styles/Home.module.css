@@ -1,4 +1,4 @@
-.overview, .our_value, .our_services, .free_service, .testemonials, .whattheysay, .members { padding: 3rem 0 0 0 } /* row margins */
+.overview, .our_value, .our_services, .free_service, .testemonials, .whattheysay, .members { padding: 5rem 0 0 0 } /* row margins */
 
 /* banner */
 .banner .img {
@@ -47,7 +47,7 @@
 /* Our value */
 .our_value {
   background-color: #001130;
-  padding: 3rem 0 1.5rem;
+  padding: 5rem 0 3.5rem;
   color: #fff;
   text-align: center
 }
@@ -57,7 +57,7 @@
 /* free service */
 .free_service { text-align: center }
 
-.free_service .cover{ padding: 3rem 0 }
+.free_service .cover{ padding: 5rem 0 }
 
 .free_service .img{
   background-image: url('../public/images/overlayII.jpg');
