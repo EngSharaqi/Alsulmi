@@ -80,14 +80,38 @@ export default {
 
     our_services: {
         title: 'Our Services',
-        value_added: 'Value Added',
-        internal_audit: 'Internal Audit',
-        accounting_bookkeeping: 'Accounting Bookkeeping',
-        accounting_software: 'Accounting Software',
-        financial_consulring: 'Financial Consulring',
-        preparing_financial_statements:'Preparing Financial Statements',
-        tax_and_zakat_consulting: 'Tax and zakat consulting',
-        zakat_and_income_reports: 'Zakat and income reports'
+        value_added: {
+            title: 'Value Added',
+            desc: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. We aim to enhance customer added value by providing distinguished financial, administrative and technical services in the aforementioned fields of work. Accounting is the basis for any successful business'
+        },
+        internal_audit:{
+            title: 'Internal Audit',
+            desc: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. We aim to enhance customer added value by providing distinguished financial, administrative and technical services in the aforementioned fields of work. Accounting is the basis for any successful business'
+        },
+        accounting_bookkeeping: {
+            title: 'Accounting Bookkeeping',
+            desc: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. We aim to enhance customer added value by providing distinguished financial, administrative and technical services in the aforementioned fields of work. Accounting is the basis for any successful business'
+        },
+        accounting_software:{
+            title: 'Accounting Software',
+            desc: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. We aim to enhance customer added value by providing distinguished financial, administrative and technical services in the aforementioned fields of work. Accounting is the basis for any successful business'
+        },
+        financial_consulring: {
+            title: 'Financial Consulring',
+            desc: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. We aim to enhance customer added value by providing distinguished financial, administrative and technical services in the aforementioned fields of work. Accounting is the basis for any successful business'
+        },
+        preparing_financial_statements: {
+            title: 'Preparing Financial Statements',
+            desc: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. We aim to enhance customer added value by providing distinguished financial, administrative and technical services in the aforementioned fields of work. Accounting is the basis for any successful business'
+        },
+        tax_and_zakat_consulting: {
+            title: 'Tax and zakat consulting',
+            desc: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. We aim to enhance customer added value by providing distinguished financial, administrative and technical services in the aforementioned fields of work. Accounting is the basis for any successful business'
+        },
+        zakat_and_income_reports: {
+            title: 'Zakat and income reports', 
+            desc: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. We aim to enhance customer added value by providing distinguished financial, administrative and technical services in the aforementioned fields of work. Accounting is the basis for any successful business'
+        },
     },
 
     free_services: {
@@ -96,6 +120,7 @@ export default {
     },
 
     teamWork: {
+        title: 'Teamwork',
         ibrahim_alsulmi: {
             name: 'Ibrahim Alsulmi',
             title: 'CEO & Owner'
