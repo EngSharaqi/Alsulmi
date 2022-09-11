@@ -5,13 +5,16 @@ import Link from 'next/link'
 
 import en from '../locales/en';
 import ar from '../locales/ar';
-export default function Links() {
+export default function Links(props) {
     var router = useRouter();
     let t = router.locale === 'en' ? en : ar;
 
     var handleLang = (e) => {
         var val = e.target.value;
-        router.push(`/` + `${val}`);
+        router.push(`/${val}`)
+        document.getElementById('langBtn').getAttribute('value') == 'ar'
+        ? document.getElementsByTagName('body')[0].classList.add(`ar`)
+        : document.getElementsByTagName('body')[0].classList.remove(`ar`)
     }
 
     var handleForm = (e) => {
@@ -125,7 +128,7 @@ export default function Links() {
                 </li>
 
                 <li className={router.pathname == "/blog" ? `nav-item ${main.active}` : "nav-item"}>
-                    <Link href="/blog">
+                    <Link href="/#">
                         <a class="nav-link">{t.nav.blog}</a>
                     </Link>
                 </li>
@@ -133,7 +136,7 @@ export default function Links() {
                 <li>
                     <a class="nav-link">
                         <form onClick={handleForm}>
-                            <input type='submit' onClick={handleLang} class={`btn btn-primary ${main.lang_btn}`} value={router.locale === 'en' ? 'ar' : 'en'} />
+                            <input type='submit' onClick={handleLang} id='langBtn' class={`btn btn-primary ${main.lang_btn}`} value={router.locale === 'en' ? 'ar' : 'en'} />
                         </form>
                     </a>
                 </li>

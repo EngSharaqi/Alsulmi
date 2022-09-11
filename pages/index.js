@@ -42,7 +42,7 @@ export default function Home() {
       </Head>
 
       {/* cover */}
-      <main className={`${main.banner}`}>
+      <main className={`${main.banner} bannerAr`}>
         <div className='row'>
           <div className={main.img}>
             <div className={main.cover}>
@@ -329,7 +329,7 @@ export default function Home() {
           </div>
 
           <div class="row">
-            <div className={main.slider}>
+            <div className={`${main.slider}`}>
               <div class={main.slide_track}>
                 <div className={main.slide}>
                   <div className={main.card + ' ' + main.review}>

@@ -11,7 +11,7 @@ export default function Contact_us() {
             <Head>
                 <title>{t.title.contactus}</title>
             </Head>
-            <div className={`${main.contactus}`}>
+            <div className={`${main.contactus} contactUsAr`}>
                 <div className='row'>
                     <div className='container'>
                         <h4>{t.contact_us.title}</h4>
