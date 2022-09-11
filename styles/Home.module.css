@@ -1,4 +1,4 @@
-.overview, .our_value, .our_services, .free_service, .testemonials, .whattheysay, .members { margin: 3rem 0 0 0 } /* row margins */
+.overview, .our_value, .our_services, .free_service, .testemonials, .whattheysay, .members { padding: 3rem 0 0 0 } /* row margins */
 
 /* banner */
 .banner .img {

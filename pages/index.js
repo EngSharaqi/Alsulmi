@@ -76,7 +76,7 @@ export default function Home() {
       </main>
 
       {/* Overview section */}
-      <div className={`row ${main.overview}`}>
+      <div className={`row ${main.overview}`} id='about_us'>
         <div className='container'>
           <div className={`row ${main.column}`}>
             <div className={`col-xs-12 col-sm-12 col-md-8 col-lg-8`}>
@@ -94,7 +94,7 @@ export default function Home() {
       </div>
 
       {/* Our Value  */}
-      <div className={`row ${main.our_value}`}>
+      <div className={`row ${main.our_value}`} id='our_value'>
         <div className='container'>
           <div className='row'>
             <div className='row'>
@@ -135,10 +135,10 @@ export default function Home() {
       </div>
 
       {/* Our Services */}
-      <Services />
+      <Services id='our_services' />
 
       {/* Free services */}
-      <div className={`row ${main.banner} ${main.free_service}`}>
+      <div className={`row ${main.banner} ${main.free_service}`} id='why_us'>
         <div className={main.img}>
           <div className={main.cover}>
             <div className='container'>
@@ -152,7 +152,7 @@ export default function Home() {
       </div>
 
       {/* Testimonials */}
-      <div className={`row ${main.testemonials}`}>
+      <div className={`row ${main.testemonials}`} id='testimonials'>
         <div class='container'>
           <div className='row'>
             <h4>Testemonials</h4>
@@ -182,7 +182,7 @@ export default function Home() {
       </div>
 
       {/* Team members */}
-      <div className={`row ${main.members}`}>
+      <div className={`row ${main.members}`} id='our_team'>
         <div className='container'>
           <h4>Teamwork</h4>
           <div className={`row`}>
@@ -324,7 +324,7 @@ export default function Home() {
 
       {/* Parteners */}
       <div class="row">
-        <div className={main.whattheysay}>
+        <div className={main.whattheysay} id='parteners'>
           <div class="row" id="portfolio">
             <h4>Parteners</h4>
           </div>
