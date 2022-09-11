@@ -1,7 +1,13 @@
 import banner_img from '../public/images/banner_logo.png'
 import main from '../styles/footer.module.css'
+import { useRouter } from "next/router";
+
+import en from '../locales/en'
+import ar from '../locales/ar'
 
 export default function Footer() {
+    var router = useRouter();
+    let t = router.locale === 'en' ? en : ar;
     return (
         <>
             {/* Footer */}
@@ -17,8 +23,8 @@ export default function Footer() {
                 <div className='row'>
                     <div className='container'>
                         <img src={banner_img.src} />
-                        <h6>All Rights Reserved &copy; Alsulmi CPA 2020-2022</h6>
-                        <h6>Phone: <a href='tel:+966114846664'>+966 114 846 664</a> - <a href='tel:+966560229188'>+966 560 229 188</a></h6>
+                        <h6>{t.footer.copy_rights}</h6>
+                        <h6>{t.footer.phone.title} <a href='tel:+966114846664'>{t.footer.phone.a}</a> - <a href='tel:+966560229188'>{t.footer.phone.b}</a></h6>
                         <p className={`${main.social}`}>
                             <ul>
                                 <a href='/'>
