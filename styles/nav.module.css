@@ -74,7 +74,13 @@
     }
 }
 
-@media(max-width: 992px){
+@media(min-width: 991px){
+    .navbar .linksF {
+        overflow-y: initial;
+        max-height: unset
+    }
+}
+@media(max-width: 991px){
     .aboutUsF ul {
         display: block;
         position: initial;
