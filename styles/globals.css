@@ -9,6 +9,17 @@ html[lang='ar'] body {
     font-family: Cairo, Arial, Georgia, Times, 'Times New Roman', serif
 }
 
+html[lang='ar'] body p, html[lang='ar'] body #testimonials p {
+    line-height: 2
+}
+
+html[lang='ar'] body #testimonials p {
+    line-height: initial
+}
+html[lang='ar'] body #our_team h5 { line-height: initial; font-size: 18px }
+
+html[lang='ar'] body #our_team p { line-height: initial; font-size: 11px }
+
 html[lang='ar'] body ul.navbar-nav.ml-auto.mt-2.mt-lg-0, html[lang='ar'] body.ar ul.navbar-nav.ml-auto.mt-2.mt-lg-0 {
     margin-left: 0 !important;
     margin-right: auto;
@@ -25,6 +36,8 @@ html[lang='ar'] body ul.navbar-nav, html[lang='ar'] body.ar ul.navbar-nav { padd
 html[lang='ar'] body #about_us img{ transform: scale(-1,1) }
 
 html[lang='ar'] body .contactUsAr h5, html[lang='ar'] body .contactUsAr p, html[lang='ar'] body .contactUsAr label, html[lang='ar'] body .contactUsAr small {
-    text-align: right !important;
+    text-align: right;
     width: 100%;
 }
+
+html[lang='ar'] body .contactUsAr form h5 { text-align: center }
