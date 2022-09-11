@@ -30,11 +30,6 @@ export default function Links() {
                     <a class="nav-link">{t.aboutus}</a>
                     <ul>
                         <li>
-                            <Link href='/#about_us'>
-                                <a className='nav-link'>About us</a>
-                            </Link>
-                        </li>
-                        <li>
                             <Link href='/#our_value'>
                                 <a className='nav-link'>Our value</a>
                             </Link>

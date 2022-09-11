@@ -173,6 +173,10 @@
   margin: 5px
 }
 
+.members .card:hover {
+  filter: grayscale(1);
+  /* transform: scale(0.9) */
+}
 .team_imgs {
   width: 100%;
   height: 220px;

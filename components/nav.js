@@ -34,7 +34,7 @@ export default function Nav() {
                     <a class="navbar-brand" href="#" style={{ 'width': '40px' }}>
                         <Image class='logo' src={logo} alt='International for exports and trading' />
                     </a>
-                    <div class="collapse navbar-collapse contacts social" id="navbarTogglerDemo03">
+                    <div class={`collapse navbar-collapse contacts social ${main.linksF}`} id="navbarTogglerDemo03">
                         <Links />
                     </div>
 
