@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
 import main from '../styles/Home.module.css'
 import { useRouter } from "next/router";
 import Services from '../components/services'
