@@ -1,0 +1,11 @@
+.srvs_detalis { margin: 3rem 0 0 0}
+
+.srvs_detalis i {
+    font-size: 70px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    color: #007bff
+}
+
+.srvs_detalis h4, .srvs_detalis p { text-align: center }

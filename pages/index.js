@@ -3,6 +3,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import main from '../styles/Home.module.css'
 import { useRouter } from "next/router";
+import Services from '../components/services'
+
+import logo from '../public/images/logo.PNG'
 
 import en from '../locales/en';
 import ar from '../locales/ar';
@@ -23,6 +26,12 @@ import secureEyes from '../public/images/parteners/Secureeyes.png'
 import servicesSolutions from '../public/images/parteners/Services-Solutions.png'
 import sharek from '../public/images/parteners/Sharek.png'
 import spsc from '../public/images/parteners/SPSC.png'
+
+// Teamwork
+import ibrahim_alsulmi from '../public/images/team/ibrahim_alsulmi.jpg'
+import khaled from '../public/images/team/khaled.jpeg'
+import otba_bakr from '../public/images/team/otba-bakr.jpg'
+import yosef_alsulmi from '../public/images/team/yosef_alsulmi.jpg'
 
 export default function Home() {
   var router = useRouter();
@@ -126,78 +135,7 @@ export default function Home() {
       </div>
 
       {/* Our Services */}
-      <div className={`row ${main.our_services}`}>
-        <div className='container'>
-          <h4>Our Services</h4>
-          <div className='row'>
-            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
-              <div className={`card ${main.card}`}>
-                <p>
-                  <i class="fas fa-file-invoice-dollar"></i>
-                </p>
-                <h6>Value Added Services</h6>
-              </div>
-            </div>
-            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
-              <div className={`card ${main.card}`}>
-                <p>
-                  <i class="fas fa-search-dollar"></i>
-                </p>
-                <h6>Internal audit</h6>
-              </div>
-            </div>
-            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
-              <div className={`card ${main.card}`}>
-                <p>
-                  <i class="fas fa-coins"></i>
-                </p>
-                <h6>Preparing financial statements</h6>
-              </div>
-            </div>
-            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
-              <div className={`card ${main.card}`}>
-                <p>
-                  <i class="fas fa-comment-dollar"></i>
-                </p>
-                <h6>Zakat and income reports</h6>
-              </div>
-            </div>
-
-            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
-              <div className={`card ${main.card}`}>
-                <p>
-                  <i class="fas fa-receipt"></i>
-                </p>
-                <h6>Accounting bookkeeping</h6>
-              </div>
-            </div>
-            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
-              <div className={`card ${main.card}`}>
-                <p>
-                  <i class="fas fa-university"></i>
-                </p>
-                <h6>Financial consulting</h6>
-              </div>
-            </div>
-            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
-              <div className={`card ${main.card}`}>
-                <p>
-                  <i class="fas fa-desktop"></i>
-                </p>
-                <h6>Accounting software</h6>
-              </div>
-            </div>
-            <div className='col-xs-6 col-sm-6 col-md-3 col-lg-3' style={{ 'padding': '5px' }}>
-              <div className={`card ${main.card}`}>
-                <p>
-                  <i class="fas fa-hand-holding-usd"></i>
-                </p>
-                <h6>Tax and Zakat Consulting</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Services />
 
       {/* Free services */}
       <div className={`row ${main.banner} ${main.free_service}`}>
@@ -244,148 +182,286 @@ export default function Home() {
       </div>
 
       {/* Team members */}
+      <div className={`row ${main.members}`}>
+        <div className='container'>
+          <h4>Teamwork</h4>
+          <div className={`row`}>
+            {/* row 1 === 1 */}
+            <div className={`row ${main.FCard}`} style={{ 'text-align': 'center' }}>
+              <div className={`card ${main.card}`}>
+                <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${ibrahim_alsulmi.src})` }}></div>
+                <div className={`row ${main.employee}`}>
+                  <h5>Ibrahim Alsulmi</h5>
+                  <p>Founder &amp; Owner</p>
+                </div>
+              </div>
+            </div>
+
+            {/* row 2 === 1 */}
+            <div className={`row ${main.FCard}`} style={{ 'text-align': 'center' }}>
+              <div className={`card ${main.card}`}>
+                <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${khaled.src})` }}></div>
+                <div className={`row ${main.employee}`}>
+                  <h5>Khaled Salah</h5>
+                  <p>Senior auditor &amp; financial and tax advisor</p>
+                </div>
+              </div>
+            </div>
+
+            {/* row 3 === 2 */}
+            <div className={`row ${main.FCard}`} style={{ 'text-align': 'right'}}>
+              <div className={`card ${main.card}`}>
+                <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${otba_bakr.src})` }}></div>
+                <div className={`row ${main.employee}`}>
+                  <h5>Otba Bakr</h5>
+                  <p>financial and TAX Consultant</p>
+                </div>
+              </div>
+
+              <div style={{ 'text-align': 'left'}}>
+                <div className={`card ${main.card}`}>
+                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                  <div className={`row ${main.employee}`}>
+                    <h5>Maha Alqasem</h5>
+                    <p>Senior auditor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* row 4 === 3 */}
+            <div className={`row ${main.FCard}`} style={{ 'text-align': 'right'}}>
+              <div className={`card ${main.card}`}>
+                <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                <div className={`row ${main.employee}`}>
+                  <h5>Ahmed Yahia</h5>
+                  <p>Aduitor &amp; administration</p>
+                </div>
+              </div>
+
+              <div style={{ 'text-align': 'center'}} >
+                <div className={`card ${main.card}`}>
+                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                  <div className={`row ${main.employee}`}>
+                    <h5>Adbulmaged Sharaqi</h5>
+                    <p>Auditor</p>
+                  </div>
+                </div>
+              </div>
+              <div style={{ 'text-align': 'left'}}>
+                <div className={`card ${main.card}`}>
+                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                  <div className={`row ${main.employee}`}>
+                    <h5>Mona Sultan</h5>
+                    <p>Audoitor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* row 5 === 3 */}
+            <div className={`row ${main.FCard}`} style={{ 'text-align': 'right'}}>
+              <div className={`card ${main.card}`}>
+                <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${yosef_alsulmi.src})` }}></div>
+                <div className={`row ${main.employee}`}>
+                  <h5>Yosef Alsulmi</h5>
+                  <p>Auditor</p>
+                </div>
+              </div>
+
+              <div style={{ 'text-align': 'center'}}>
+                <div className={`card ${main.card}`}>
+                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                  <div className={`row ${main.employee}`}>
+                    <h5>Tasneem Mohamed</h5>
+                    <p>Auditor</p>
+                  </div>
+                </div>
+              </div>
+              <div style={{ 'text-align': 'left'}}>
+                <div className={`card ${main.card}`}>
+                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                  <div className={`row ${main.employee}`}>
+                    <h5>Moaaz Alsulmi</h5>
+                    <p>Auditor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* row 6 === 2 */}
+            <div className={`row ${main.FCard}`} style={{ 'text-align': 'right'}}>
+              <div className={`card ${main.card}`}>
+                <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                <div className={`row ${main.employee}`}>
+                  <h5>Shaden Alsulmi</h5>
+                  <p>IT specialist</p>
+                </div>
+              </div>
+
+              <div style={{ 'text-align': 'left'}}>
+                <div className={`card ${main.card}`}>
+                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                  <div className={`row ${main.employee}`}>
+                    <h5>Mohamed Ghareeb</h5>
+                    <p>Auditor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* row 7 === 1 */}
+            <div className={`row ${main.FCard}`} style={{ 'text-align': 'center'}}>
+              <div className={`card ${main.card}`}>
+                <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                <div className={`row ${main.employee}`}>
+                  <h5>Mohamed Alramady</h5>
+                  <p>Auditor</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
 
       {/* Parteners */}
       <div class="row">
-          <div className={main.whattheysay}>
-            <div class="row" id="portfolio">
-              <h4>Parteners</h4>
-            </div>
+        <div className={main.whattheysay}>
+          <div class="row" id="portfolio">
+            <h4>Parteners</h4>
+          </div>
 
-            <div class="row">
-              <div className={main.slider}>
-                <div class={main.slide_track}>
-                  <div className={main.slide}>
-                    <div className={ main.card + ' ' + main.review}>
-                      <div>
-                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
-                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
-                      </div>
-                      <div className="card-body">
-                        <img src={dell.src} />
-                      </div>
+          <div class="row">
+            <div className={main.slider}>
+              <div class={main.slide_track}>
+                <div className={main.slide}>
+                  <div className={main.card + ' ' + main.review}>
+                    <div>
+                      <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                      {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                    </div>
+                    <div className="card-body">
+                      <img src={dell.src} />
                     </div>
                   </div>
+                </div>
 
-                  <div className={main.slide}>
-                    <div className={ main.card + ' ' + main.review}>
-                      <div>
-                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
-                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
-                      </div>
-                      <div className="card-body">
-                        <img src={aldawaa.src} />
-                      </div>
+                <div className={main.slide}>
+                  <div className={main.card + ' ' + main.review}>
+                    <div>
+                      <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                      {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                    </div>
+                    <div className="card-body">
+                      <img src={aldawaa.src} />
                     </div>
                   </div>
-                  <div className={main.slide}>
-                    <div className={ main.card + ' ' + main.review}>
-                      <div>
-                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
-                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
-                      </div>
-                      <div className="card-body">
-                        <img src={aldawaa_pharmacy.src} />
-                      </div>
+                </div>
+                <div className={main.slide}>
+                  <div className={main.card + ' ' + main.review}>
+                    <div>
+                      <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                      {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                    </div>
+                    <div className="card-body">
+                      <img src={aldawaa_pharmacy.src} />
                     </div>
                   </div>
-                  <div className={main.slide}>
-                    <div className={ main.card + ' ' + main.review}>
-                      <div>
-                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
-                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
-                      </div>
-                      <div className="card-body">
-                        <img src={asalet.src} />
-                      </div>
+                </div>
+                <div className={main.slide}>
+                  <div className={main.card + ' ' + main.review}>
+                    <div>
+                      <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                      {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                    </div>
+                    <div className="card-body">
+                      <img src={asalet.src} />
                     </div>
                   </div>
-                  <div className={main.slide}>
-                    <div className={ main.card + ' ' + main.review}>
-                      <div>
-                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
-                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
-                      </div>
-                      <div className="card-body">
-                        <img src={atlas.src} />
-                      </div>
+                </div>
+                <div className={main.slide}>
+                  <div className={main.card + ' ' + main.review}>
+                    <div>
+                      <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                      {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                    </div>
+                    <div className="card-body">
+                      <img src={atlas.src} />
                     </div>
                   </div>
-                  <div className={main.slide}>
-                    <div className={ main.card + ' ' + main.review}>
-                      <div>
-                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
-                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
-                      </div>
-                      <div className="card-body">
-                        <img src={browneagle.src} />
-                      </div>
+                </div>
+                <div className={main.slide}>
+                  <div className={main.card + ' ' + main.review}>
+                    <div>
+                      <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                      {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                    </div>
+                    <div className="card-body">
+                      <img src={browneagle.src} />
                     </div>
                   </div>
-                  <div className={main.slide}>
-                    <div className={ main.card + ' ' + main.review}>
-                      <div>
-                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
-                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
-                      </div>
-                      <div className="card-body">
-                        <img src={fullscreen.src} />
-                      </div>
+                </div>
+                <div className={main.slide}>
+                  <div className={main.card + ' ' + main.review}>
+                    <div>
+                      <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                      {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                    </div>
+                    <div className="card-body">
+                      <img src={fullscreen.src} />
                     </div>
                   </div>
-                  <div className={main.slide}>
-                    <div className={ main.card + ' ' + main.review}>
-                      <div>
-                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
-                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
-                      </div>
-                      <div className="card-body">
-                        <img src={moj.src} />
-                      </div>
+                </div>
+                <div className={main.slide}>
+                  <div className={main.card + ' ' + main.review}>
+                    <div>
+                      <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                      {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                    </div>
+                    <div className="card-body">
+                      <img src={moj.src} />
                     </div>
                   </div>
-                  <div className={main.slide}>
-                    <div className={ main.card + ' ' + main.review}>
-                      <div>
-                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
-                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
-                      </div>
-                      <div className="card-body">
-                        <img src={secureEyes.src} />
-                      </div>
+                </div>
+                <div className={main.slide}>
+                  <div className={main.card + ' ' + main.review}>
+                    <div>
+                      <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                      {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                    </div>
+                    <div className="card-body">
+                      <img src={secureEyes.src} />
                     </div>
                   </div>
-                  <div className={main.slide}>
-                    <div className={ main.card + ' ' + main.review}>
-                      <div>
-                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
-                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
-                      </div>
-                      <div className="card-body">
-                        <img src={servicesSolutions.src} />
-                      </div>
+                </div>
+                <div className={main.slide}>
+                  <div className={main.card + ' ' + main.review}>
+                    <div>
+                      <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                      {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                    </div>
+                    <div className="card-body">
+                      <img src={servicesSolutions.src} />
                     </div>
                   </div>
-                  <div className={main.slide}>
-                    <div className={ main.card + ' ' + main.review}>
-                      <div>
-                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
-                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
-                      </div>
-                      <div className="card-body">
-                        <img src={sharek.src} />
-                      </div>
+                </div>
+                <div className={main.slide}>
+                  <div className={main.card + ' ' + main.review}>
+                    <div>
+                      <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                      {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                    </div>
+                    <div className="card-body">
+                      <img src={sharek.src} />
                     </div>
                   </div>
-                  <div className={main.slide}>
-                    <div className={ main.card + ' ' + main.review}>
-                      <div>
-                        <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
-                        {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
-                      </div>
-                      <div className="card-body">
-                        <img src={spsc.src} />
-                      </div>
+                </div>
+                <div className={main.slide}>
+                  <div className={main.card + ' ' + main.review}>
+                    <div>
+                      <div className={main.proj1 + ' ' + main.revImg + ' ' + main.r1}></div>
+                      {/* <Image className="card-img-top" src={aboutImg} alt="Card image cap" /> */}
+                    </div>
+                    <div className="card-body">
+                      <img src={spsc.src} />
                     </div>
                   </div>
                 </div>
@@ -393,7 +469,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-     
+      </div>
+
 
     </>
   )

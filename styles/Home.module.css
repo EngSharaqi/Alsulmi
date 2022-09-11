@@ -1,4 +1,4 @@
-.overview, .our_value, .our_services, .free_service, .testemonials, .whattheysay { margin: 3rem 0 0 0 } /* row margins */
+.overview, .our_value, .our_services, .free_service, .testemonials, .whattheysay, .members { margin: 3rem 0 0 0 } /* row margins */
 
 /* banner */
 .banner .img {
@@ -53,21 +53,6 @@
 }
 
 .our_value h6 + p { margin-bottom: 2rem; font-size: .9rem }
-
-/* Our Services */
-.our_services {
-  text-align: center
-}
-.card {
-  padding: 1rem;
-  height: 100%;
-  text-align: center;
-  align-items: center;
-  margin: 0 0 10px 0;
-  justify-content: center
-}
-
-.card i { font-size: 2rem; color: #007bff }
 
 /* free service */
 .free_service { text-align: center }
@@ -172,6 +157,52 @@
     z-index: 2;
 }
   
+
+/* Teamwork */
+.FCard { width: 100%; justify-content: center }
+.members h4 { text-align: center }
+
+.members .card {
+  display: inline-block;
+  margin: 0 0 2rem 0;
+  border: 1px solid #cbcbcb;
+  max-width: 220px;
+  max-height: 300px;
+  padding: 0;
+  margin: 5px
+}
+
+.team_imgs {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  margin: 0
+}
+
+.members .employee {
+  /* background-color: #eee; */
+  width: 100%
+}
+
+.members .employee h5, .members .employee p {
+  width: 100%;
+  text-align: center
+}
+
+.members .employee h5 {
+  margin: .5rem 0 0
+}
+
+.members .employee p {
+  margin: 0 0 .5rem
+}
+
+@media(max-width: 767px){
+  .FCard { text-align: center !important; margin: 5px 0; }
+  .card { width: 100% !important }
+}
+
+
 /*  ==== Media ==== */
 /* banner */
 @media(max-width: 768px){
