@@ -6,7 +6,9 @@ export default {
     blog: 'Blog',
     title: {
         home: 'Home | Alsulmi',
-        aboutus: 'About us | Alsulmi',
-        services: 'Services | Alsulmi'
+        services: {
+            services: 'Services | Alsulmi',
+            
+        }
     }
 }
