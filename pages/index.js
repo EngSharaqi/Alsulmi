@@ -222,7 +222,7 @@ export default function Home() {
 
               <div style={{ 'text-align': 'left'}}>
                 <div className={`card ${main.card}`}>
-                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url('https://placeholder.photo/img/220')` }}></div>
                   <div className={`row ${main.employee}`}>
                     <h5>Maha Alqasem</h5>
                     <p>Senior auditor</p>
@@ -233,7 +233,7 @@ export default function Home() {
             {/* row 4 === 3 */}
             <div className={`row ${main.FCard}`} style={{ 'text-align': 'right'}}>
               <div className={`card ${main.card}`}>
-                <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                <div className={`${main.team_imgs}`} style={{ 'background-image': `url('https://placeholder.photo/img/220')` }}></div>
                 <div className={`row ${main.employee}`}>
                   <h5>Ahmed Yahia</h5>
                   <p>Aduitor &amp; administration</p>
@@ -242,7 +242,7 @@ export default function Home() {
 
               <div style={{ 'text-align': 'center'}} >
                 <div className={`card ${main.card}`}>
-                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url('https://placeholder.photo/img/220')` }}></div>
                   <div className={`row ${main.employee}`}>
                     <h5>Adbulmaged Sharaqi</h5>
                     <p>Auditor</p>
@@ -251,7 +251,7 @@ export default function Home() {
               </div>
               <div style={{ 'text-align': 'left'}}>
                 <div className={`card ${main.card}`}>
-                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url('https://placeholder.photo/img/220')` }}></div>
                   <div className={`row ${main.employee}`}>
                     <h5>Mona Sultan</h5>
                     <p>Audoitor</p>
@@ -272,7 +272,7 @@ export default function Home() {
 
               <div style={{ 'text-align': 'center'}}>
                 <div className={`card ${main.card}`}>
-                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url('https://placeholder.photo/img/220')` }}></div>
                   <div className={`row ${main.employee}`}>
                     <h5>Tasneem Mohamed</h5>
                     <p>Auditor</p>
@@ -281,7 +281,7 @@ export default function Home() {
               </div>
               <div style={{ 'text-align': 'left'}}>
                 <div className={`card ${main.card}`}>
-                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url('https://placeholder.photo/img/220')` }}></div>
                   <div className={`row ${main.employee}`}>
                     <h5>Moaaz Alsulmi</h5>
                     <p>Auditor</p>
@@ -292,7 +292,7 @@ export default function Home() {
             {/* row 6 === 2 */}
             <div className={`row ${main.FCard}`} style={{ 'text-align': 'right'}}>
               <div className={`card ${main.card}`}>
-                <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                <div className={`${main.team_imgs}`} style={{ 'background-image': `url('https://placeholder.photo/img/220')` }}></div>
                 <div className={`row ${main.employee}`}>
                   <h5>Shaden Alsulmi</h5>
                   <p>IT specialist</p>
@@ -301,7 +301,7 @@ export default function Home() {
 
               <div style={{ 'text-align': 'left'}}>
                 <div className={`card ${main.card}`}>
-                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                  <div className={`${main.team_imgs}`} style={{ 'background-image': `url('https://placeholder.photo/img/220')` }}></div>
                   <div className={`row ${main.employee}`}>
                     <h5>Mohamed Ghareeb</h5>
                     <p>Auditor</p>
@@ -312,7 +312,7 @@ export default function Home() {
             {/* row 7 === 1 */}
             <div className={`row ${main.FCard}`} style={{ 'text-align': 'center'}}>
               <div className={`card ${main.card}`}>
-                <div className={`${main.team_imgs}`} style={{ 'background-image': `url(${logo.src})` }}></div>
+                <div className={`${main.team_imgs}`} style={{ 'background-image': `url('https://placeholder.photo/img/220')` }}></div>
                 <div className={`row ${main.employee}`}>
                   <h5>Mohamed Alramady</h5>
                   <p>Auditor</p>

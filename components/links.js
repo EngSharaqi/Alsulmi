@@ -26,7 +26,7 @@ export default function Links() {
                         <a class="nav-link">{t.home}</a>
                     </Link>
                 </li>
-                <li className={router.pathname == "/aboutus" ? `nav-item ${main.active} ${main.aboutUsF}` : `nav-item ${main.aboutUsF}` }>
+                <li className={router.pathname == "/aboutus" ? `nav-item ${main.active} ${main.aboutUsF}` : `nav-item ${main.aboutUsF}`}>
                     <a class="nav-link">{t.aboutus}</a>
                     <ul>
                         <li>
@@ -64,63 +64,63 @@ export default function Links() {
 
                 <li className={
                     router.pathname == "/services"
-                    || router.pathname == "/services/value_added"
-                    || router.pathname == "/services/internal_audit"
-                    || router.pathname == "/services/preparing_financial_statements"
-                    || router.pathname == "/services/zakat_and_income_reports"
-                    || router.pathname == "/services/accounting_bookkeeping"
-                    || router.pathname == "/services/financial_consulring"
-                    || router.pathname == "/services/accounting_software"
-                    || router.pathname == "/services/tax_and_zakat_consulting"
-                    ? `nav-item ${main.active} ${main.aboutUsF} ${main.servicesF}`
-                    : `nav-item ${main.aboutUsF} ${main.servicesF}`}>
+                        || router.pathname == "/services/value_added"
+                        || router.pathname == "/services/internal_audit"
+                        || router.pathname == "/services/preparing_financial_statements"
+                        || router.pathname == "/services/zakat_and_income_reports"
+                        || router.pathname == "/services/accounting_bookkeeping"
+                        || router.pathname == "/services/financial_consulring"
+                        || router.pathname == "/services/accounting_software"
+                        || router.pathname == "/services/tax_and_zakat_consulting"
+                        ? `nav-item ${main.active} ${main.aboutUsF} ${main.servicesF}`
+                        : `nav-item ${main.aboutUsF} ${main.servicesF}`}>
 
                     <Link href="/services">
                         <a class="nav-link">{t.services}</a>
                     </Link>
                     <ul>
-                        <li className={router.pathname == "/services/value_added" ? `${main.activeLi}`: ''}>
+                        <li className={router.pathname == "/services/value_added" ? `${main.activeLi}` : ''}>
                             <Link href='/services/value_added'>
                                 <a className={`nav-link ${main.a}`}>Value added services</a>
                             </Link>
                         </li>
-                        <li className={router.pathname == "/services/internal_audit" ? `${main.activeLi}`: ''}>
+                        <li className={router.pathname == "/services/internal_audit" ? `${main.activeLi}` : ''}>
                             <Link href='/services/internal_audit'>
                                 <a className={`nav-link ${main.a}`}>Internal audit</a>
                             </Link>
                         </li>
-                        <li className={router.pathname == "/services/preparing_financial_statements" ? `${main.activeLi}`: ''}>
+                        <li className={router.pathname == "/services/preparing_financial_statements" ? `${main.activeLi}` : ''}>
                             <Link href='/services/preparing_financial_statements'>
                                 <a className={`nav-link ${main.a}`}>Preparing financial statements</a>
                             </Link>
                         </li>
-                        <li className={router.pathname == "/services/zakat_and_income_reports" ? `${main.activeLi}`: ''}>
+                        <li className={router.pathname == "/services/zakat_and_income_reports" ? `${main.activeLi}` : ''}>
                             <Link href='/services/zakat_and_income_reports'>
                                 <a className={`nav-link ${main.a}`}>Zakat and income reports</a>
                             </Link>
                         </li>
-                        <li className={router.pathname == "/services/accounting_bookkeeping" ? `${main.activeLi}`: ''}>
+                        <li className={router.pathname == "/services/accounting_bookkeeping" ? `${main.activeLi}` : ''}>
                             <Link href='/services/accounting_bookkeeping'>
                                 <a className={`nav-link ${main.a}`}>Accounting bookkeeping</a>
                             </Link>
                         </li>
-                        <li className={router.pathname == "/services/financial_consulring" ? `${main.activeLi}`: ''}>
+                        <li className={router.pathname == "/services/financial_consulring" ? `${main.activeLi}` : ''}>
                             <Link href='/services/financial_consulring'>
                                 <a className={`nav-link ${main.a}`}>Financial consulting</a>
                             </Link>
                         </li>
-                        <li className={router.pathname == "/services/accounting_software" ? `${main.activeLi}`: ''}>
+                        <li className={router.pathname == "/services/accounting_software" ? `${main.activeLi}` : ''}>
                             <Link href='/services/accounting_software'>
                                 <a className={`nav-link ${main.a}`}>Accounting software</a>
                             </Link>
                         </li>
-                        <li className={router.pathname == "/services/tax_and_zakat_consulting" ? `${main.activeLi}`: ''}>
+                        <li className={router.pathname == "/services/tax_and_zakat_consulting" ? `${main.activeLi}` : ''}>
                             <Link href='/services/tax_and_zakat_consulting'>
                                 <a className={`nav-link ${main.a}`}>Tax and Zakat Consulting</a>
                             </Link>
                         </li>
                     </ul>
-               
+
                 </li>
 
                 <li className={router.pathname == "/contactus" ? `nav-item ${main.active}` : "nav-item"}>
