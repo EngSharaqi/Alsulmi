@@ -1,0 +1,25 @@
+.contactus {
+    margin: 5rem 0
+}
+
+.contactus h4 {
+    text-align: center;
+    margin: 0 0 2rem
+}
+
+.contactus p a {
+    width: 100%;
+    display: block;
+    text-decoration: none
+}
+
+.form {
+    box-shadow: 0 0 5px #eee;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: left
+}
+
+.form h5 { text-align: center }
+
+.form button[type='submit'] { width: 100% }

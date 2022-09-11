@@ -229,7 +229,7 @@ export default {
                 title: 'الرسالة',
                 placeholder: 'اخبرنا بما تريد'
             },
-            submit: 'إرسال',
+            send: 'إرسال',
             emailHelp: 'نحن لن نشارك بريدك الإلكتروني مع اي احد'
         }
 

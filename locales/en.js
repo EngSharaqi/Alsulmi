@@ -225,7 +225,7 @@ export default {
                 title: 'Message',
                 placeholder: 'Tell us what you want'
             },
-            submit: 'Submit',
+            send: 'Send',
             emailHelp: 'We\'ll never share your email with anyone else.'
 
         }
