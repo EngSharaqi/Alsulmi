@@ -216,6 +216,12 @@
   .overview .column { flex-direction: column-reverse }
   .overview h4 { font-size: 1rem }
   .overview p { font-size: .8rem }
+
+  .banner .img { height: calc(100vh) }
+  .banner .cover section { 
+    transform: translate(0);
+    margin-top: 10%
+  }
 }
 
 /* Parteners */
