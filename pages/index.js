@@ -5,8 +5,6 @@ import main from '../styles/Home.module.css'
 import { useRouter } from "next/router";
 import Services from '../components/services'
 
-import logo from '../public/images/logo.PNG'
-
 import en from '../locales/en';
 import ar from '../locales/ar';
 
