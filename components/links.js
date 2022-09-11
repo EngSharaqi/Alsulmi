@@ -23,35 +23,35 @@ export default function Links() {
 
                 <li className={router.pathname == "/" ? `nav-item ${main.active}` : "nav-item"}>
                     <Link href="/">
-                        <a class="nav-link">{t.home}</a>
+                        <a class="nav-link">{t.nav.home}</a>
                     </Link>
                 </li>
                 <li className={router.pathname == "/aboutus" ? `nav-item ${main.active} ${main.aboutUsF}` : `nav-item ${main.aboutUsF}`}>
-                    <a class="nav-link">{t.aboutus}</a>
+                    <a class="nav-link">{t.nav.aboutus}</a>
                     <ul>
                         <li>
                             <Link href='/#our_value'>
-                                <a className='nav-link'>Our value</a>
+                                <a className='nav-link'>{t.nav.our_value}</a>
                             </Link>
                         </li>
                         <li>
                             <Link href='/#why_us'>
-                                <a className='nav-link'>Why us</a>
+                                <a className='nav-link'>{t.nav.why_us}</a>
                             </Link>
                         </li>
                         <li>
                             <Link href='/#testimonials'>
-                                <a className='nav-link'>Testemonials</a>
+                                <a className='nav-link'>{t.nav.testemonials}</a>
                             </Link>
                         </li>
                         <li>
                             <Link href='/#our_team'>
-                                <a className='nav-link'>Team members</a>
+                                <a className='nav-link'>{t.nav.team_work}</a>
                             </Link>
                         </li>
                         <li>
                             <Link href='/#parteners'>
-                                <a className='nav-link'>Parteners</a>
+                                <a className='nav-link'>{t.nav.parteners}</a>
                             </Link>
                         </li>
                     </ul>
@@ -71,47 +71,47 @@ export default function Links() {
                         : `nav-item ${main.aboutUsF} ${main.servicesF}`}>
 
                     <Link href="/services">
-                        <a class="nav-link">{t.services}</a>
+                        <a class="nav-link">{t.nav.services}</a>
                     </Link>
                     <ul>
                         <li className={router.pathname == "/services/value_added" ? `${main.activeLi}` : ''}>
                             <Link href='/services/value_added'>
-                                <a className={`nav-link ${main.a}`}>Value added services</a>
+                                <a className={`nav-link ${main.a}`}>{t.nav.value_added}</a>
                             </Link>
                         </li>
                         <li className={router.pathname == "/services/internal_audit" ? `${main.activeLi}` : ''}>
                             <Link href='/services/internal_audit'>
-                                <a className={`nav-link ${main.a}`}>Internal audit</a>
+                                <a className={`nav-link ${main.a}`}>{t.nav.internal_audit}</a>
                             </Link>
                         </li>
                         <li className={router.pathname == "/services/preparing_financial_statements" ? `${main.activeLi}` : ''}>
                             <Link href='/services/preparing_financial_statements'>
-                                <a className={`nav-link ${main.a}`}>Preparing financial statements</a>
+                                <a className={`nav-link ${main.a}`}>{t.nav.preparing_financial_statements}</a>
                             </Link>
                         </li>
                         <li className={router.pathname == "/services/zakat_and_income_reports" ? `${main.activeLi}` : ''}>
                             <Link href='/services/zakat_and_income_reports'>
-                                <a className={`nav-link ${main.a}`}>Zakat and income reports</a>
+                                <a className={`nav-link ${main.a}`}>{t.nav.zakat_and_income_reports}</a>
                             </Link>
                         </li>
                         <li className={router.pathname == "/services/accounting_bookkeeping" ? `${main.activeLi}` : ''}>
                             <Link href='/services/accounting_bookkeeping'>
-                                <a className={`nav-link ${main.a}`}>Accounting bookkeeping</a>
+                                <a className={`nav-link ${main.a}`}>{t.nav.accounting_bookkeeping}</a>
                             </Link>
                         </li>
                         <li className={router.pathname == "/services/financial_consulring" ? `${main.activeLi}` : ''}>
                             <Link href='/services/financial_consulring'>
-                                <a className={`nav-link ${main.a}`}>Financial consulting</a>
+                                <a className={`nav-link ${main.a}`}>{t.nav.financial_consulring}</a>
                             </Link>
                         </li>
                         <li className={router.pathname == "/services/accounting_software" ? `${main.activeLi}` : ''}>
                             <Link href='/services/accounting_software'>
-                                <a className={`nav-link ${main.a}`}>Accounting software</a>
+                                <a className={`nav-link ${main.a}`}>{t.nav.accounting_software}</a>
                             </Link>
                         </li>
                         <li className={router.pathname == "/services/tax_and_zakat_consulting" ? `${main.activeLi}` : ''}>
                             <Link href='/services/tax_and_zakat_consulting'>
-                                <a className={`nav-link ${main.a}`}>Tax and Zakat Consulting</a>
+                                <a className={`nav-link ${main.a}`}>{t.nav.tax_and_zakat_consulting}</a>
                             </Link>
                         </li>
                     </ul>
@@ -120,13 +120,13 @@ export default function Links() {
 
                 <li className={router.pathname == "/contactus" ? `nav-item ${main.active}` : "nav-item"}>
                     <Link href="/contactus">
-                        <a class="nav-link">{t.contactus}</a>
+                        <a class="nav-link">{t.nav.contactus}</a>
                     </Link>
                 </li>
 
                 <li className={router.pathname == "/blog" ? `nav-item ${main.active}` : "nav-item"}>
                     <Link href="/blog">
-                        <a class="nav-link">{t.blog}</a>
+                        <a class="nav-link">{t.nav.blog}</a>
                     </Link>
                 </li>
 
