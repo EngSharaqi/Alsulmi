@@ -63,7 +63,7 @@ export default function Home() {
                           </a>
                         </Link>
                       </div>
-                      <div className={`col-xs-12 col-sm-12 col-md-4 col-lg-4`}>
+                      <div className={`col-xs-12 col-sm-12 col-md-4 col-lg-4`} align='center'>
                         <img src={banner_img.src} style={{ "max-width": "100%", "margin-bottom": "20px" }} />
                       </div>
                     </div>

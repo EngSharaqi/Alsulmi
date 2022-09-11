@@ -31,7 +31,7 @@ export default function Nav() {
                         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="#" style={{ 'width': '35px' }}>
+                    <a class="navbar-brand" href="#" style={{ 'width': '40px' }}>
                         <Image class='logo' src={logo} alt='International for exports and trading' />
                     </a>
                     <div class="collapse navbar-collapse contacts social" id="navbarTogglerDemo03">

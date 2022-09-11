@@ -1,4 +1,4 @@
-import logo from '../public/images/logo.PNG'
+import banner_img from '../public/images/banner_logo.png'
 import main from '../styles/footer.module.css'
 
 export default function Footer() {
@@ -16,7 +16,7 @@ export default function Footer() {
                 </div>
                 <div className='row'>
                     <div className='container'>
-                        <img src={logo.src} />
+                        <img src={banner_img.src} />
                         <h6>All Rights Reserved &copy; Alsulmi CPA 2020-2022</h6>
                         <h6>Phone: <a href='tel:+966114846664'>+966 114 846 664</a> - <a href='tel:+966560229188'>+966 560 229 188</a></h6>
                         <p className={`${main.social}`}>
