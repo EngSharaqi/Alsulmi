@@ -5,6 +5,10 @@ html[lang='ar'] body, html[lang='ar'] body.ar {
 }
 
 /* navbar */
+html[lang='ar'] body {
+    font-family: Cairo, Arial, Georgia, Times, 'Times New Roman', serif
+}
+
 html[lang='ar'] body ul.navbar-nav.ml-auto.mt-2.mt-lg-0, html[lang='ar'] body.ar ul.navbar-nav.ml-auto.mt-2.mt-lg-0 {
     margin-left: 0 !important;
     margin-right: auto;
