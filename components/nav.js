@@ -1,5 +1,5 @@
 import Links from './links'
-import logo from '../public/images/main_logo.PNG'
+import logo from '../public/images/main_logo.pnh'
 import Image from 'next/image'
 import Head from 'next/head'
 import main from '../styles/nav.module.css'
