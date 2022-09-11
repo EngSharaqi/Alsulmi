@@ -1,22 +1,22 @@
 export default {
     title: {
-        home: 'الصفحة الرئيسية | السلمي',
-        services: 'خدماتنا | السلمي',
-        contactus: 'تواصل معنا | السلمي',
-        blog: 'المدونة | السلمي',
-        our_value: 'قيمنا | السلمي',
-        why_us: 'لماذا نحن | السلمي',
-        testemonials: 'ماذا قالوا عنا | السلمي',
-        team_work: 'فريق العمل | السلمي',
-        parteners: 'شركائنا | السلمي',
-        value_added: 'خدمات القيمة المضافة | السلمي',
-        internal_audit: 'المراجعة الداخلية | السلمي',
-        accounting_bookkeeping: 'إمساك الدفاتر المحاسبية | السلمي',
-        accounting_software: 'البرامج المحاسبية | السلمي',
-        financial_consulring: 'الإستشارات المالية | السلمي',
-        preparing_financial_statements:'اعداد القوائم والتقارير | السلمي',
-        tax_and_zakat_consulting: 'الإستشارات الضريبية والزكوية | السلمي',
-        zakat_and_income_reports: 'تقارير الزكاة والدخل | السلمي'
+        home: 'الصفحة الرئيسية | مؤسسة السلمي',
+        services: 'خدماتنا | مؤسسة السلمي',
+        contactus: 'تواصل معنا | مؤسسة السلمي',
+        blog: 'المدونة | مؤسسة السلمي',
+        our_value: 'قيمنا | مؤسسة السلمي',
+        why_us: 'لماذا نحن | مؤسسة السلمي',
+        testemonials: 'ماذا قالوا عنا | مؤسسة السلمي',
+        team_work: 'فريق العمل | مؤسسة السلمي',
+        parteners: 'شركائنا | مؤسسة السلمي',
+        value_added: 'خدمات القيمة المضافة | مؤسسة السلمي',
+        internal_audit: 'المراجعة الداخلية | مؤسسة السلمي',
+        accounting_bookkeeping: 'إمساك الدفاتر المحاسبية | مؤسسة السلمي',
+        accounting_software: 'البرامج المحاسبية | مؤسسة السلمي',
+        financial_consulring: 'الإستشارات المالية | مؤسسة السلمي',
+        preparing_financial_statements:'اعداد القوائم والتقارير | مؤسسة السلمي',
+        tax_and_zakat_consulting: 'الإستشارات الضريبية والزكوية | مؤسسة السلمي',
+        zakat_and_income_reports: 'تقارير الزكاة والدخل | مؤسسة السلمي'
     },
 
     nav: {
@@ -200,6 +200,40 @@ export default {
         }
     },
     
+    contact_us: {
+        title: 'تواصل معنا',
+        address: {
+            title: 'العنوان',
+            desc: 'مخرج 10 تقاطع الدائري الشرقي مع طريق الملك عبدالله ، حي القدس ، الرياض'
+        },
+        phone: {
+            title: 'الجوال',
+            a: '+966 114 846 664',
+            b: '+966 560 229 188'
+        },
+        email: {
+            title: 'البريد الإلكتروني',
+            email: 'khaled@Alsulmicpa.com'
+        },
+        form: {
+            letAQuickMsg: 'اترك لنا رسالة سريعة',
+            fullName: {
+                title: 'الإسم بالكامل',
+                placeholder: 'مثال: محمد شراقي'
+            },
+            email: {
+                title: 'البريد الإلكتروني',
+                placeholder: 'example@example.com'
+            },
+            message: {
+                title: 'الرسالة',
+                placeholder: 'اخبرنا بما تريد'
+            },
+            submit: 'إرسال',
+            emailHelp: 'نحن لن نشارك بريدك الإلكتروني مع اي احد'
+        }
+
+    },
     footer: {
         copy_rights: 'جميع الحقوق محفوظة © ابراهيم السلمي للمحاسبة والمراجعة القانونية.',
         phone: {

@@ -196,6 +196,42 @@ export default {
         }
     },
     
+    contact_us: {
+        title: 'Contact us',
+        address: {
+            title: 'Address',
+            desc: 'Exit 10, intersection of the Eastern Ring with King Abdullah Road, Al-Quds District, Riyadh'
+        },
+        phone: {
+            title: 'Phone',
+            a: '+966 114 846 664',
+            b: '+966 560 229 188'
+        },
+        email: {
+            title: 'Email',
+            email: 'khaled@Alsulmicpa.com'
+        },
+        form: {
+            letAQuickMsg: 'Let a quick message',
+            fullName: {
+                title: 'Full Name',
+                placeholder: 'Mohamed Sharaqi'
+            },
+            email: {
+                title: 'Email',
+                placeholder: 'example@example.com'
+            },
+            message: {
+                title: 'Message',
+                placeholder: 'Tell us what you want'
+            },
+            submit: 'Submit',
+            emailHelp: 'We\'ll never share your email with anyone else.'
+
+        }
+
+    },
+
     footer: {
         copy_rights: 'All Rights Reserved © Alsulmi CPA 2020-2022',
         phone: {
