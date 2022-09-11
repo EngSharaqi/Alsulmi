@@ -35,6 +35,7 @@
 .btn_srvs:hover { background-color: #007bff }
 
 /* overview */
+.overview { padding-bottom: 5rem }
 .overview .btn_srvs a {
   color: #007bff;
   text-decoration: none

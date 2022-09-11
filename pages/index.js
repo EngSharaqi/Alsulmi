@@ -83,9 +83,9 @@ export default function Home() {
             <div className={`col-xs-12 col-sm-12 col-md-8 col-lg-8`}>
               <h4>An overview of Ibrahim Al-Sulami's office</h4>
               <p>Ibrahim Al Sulami Office is accountants and certified auditors one of the best auditing and accounting companies in the Kingdom of Saudi Arabia, where we provide financial, accounting and tax consulting services, auditing and auditing, internal audit of companies and bookkeeping accounting. We aim to enhance customer added value by providing distinguished financial, administrative and technical services in the aforementioned fields of work. Accounting is the basis for any successful business</p>
-              <button className={`btn btn-primary ${main.btn_srvs}`}>
+              {/* <button className={`btn btn-primary ${main.btn_srvs}`}>
                 <a href='/'>Read more</a>
-              </button>
+              </button> */}
             </div>
             <div className={`col-xs-12 col-sm-12 col-md-4 col-lg-4`}>
               <img src={overview.src} style={{ "max-width": "100%", "margin-bottom": "20px" }} />
