@@ -212,15 +212,14 @@
 
 /*  ==== Media ==== */
 /* banner */
+@media(max-width: 500px){ .banner h1 { font-size: 2rem } }
+
 @media(max-width: 768px){
   .banner .custReverse { flex-direction: column-reverse !important; text-align: center }
-  .banner h1 { font-size: 1.3rem }
-  .banner p { font-size: .7rem }
-  .banner a button, .overview button { font-size: .7rem; min-width: 80px }
 
   .overview .column { flex-direction: column-reverse }
-  .overview h4 { font-size: 1rem }
-  .overview p { font-size: .8rem }
+  /* .overview h4 { font-size: 1rem }
+  .overview p { font-size: .8rem } */
 
   .banner .img { height: calc(100vh) }
   .banner .cover section { 
@@ -241,7 +240,18 @@
   .members p { font-size: 12px }
   .employee { padding: 5px }
   .team_imgs { height: 165px }
+
+  .banner .custReverse {
+    transform: translate(0, 50%)
+  }
 }
+
+@media(max-width:767px) and (max-height: 768px) {
+  .banner .custReverse {
+    transform: translate(0, 25%)
+  }
+}
+
 
 /* Parteners */
 @keyframes scroll {

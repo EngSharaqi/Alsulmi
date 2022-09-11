@@ -13,7 +13,7 @@
     box-shadow: 0 0 1px 1px #eee
 }
 
-.fUL a { color: var(--inActive) !important }
+.fUL a { color: rgba(0,0,0,.5) !important }
 
 .fUL a:hover {
     color: var(--active) !important;
@@ -95,5 +95,6 @@
       }
 
       .aboutUsF ul li:hover a, .fUL .active ul li:hover .a, .fUL .active ul li.activeLi .a { color: var(--active, #222) !important}
+      .aboutUsF ul li a, .navbar .linksF .aboutUsF ul li a { color: rgba(0,0,0,.5) !important}
 
 }
