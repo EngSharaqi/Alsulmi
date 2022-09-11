@@ -223,6 +223,20 @@
     transform: translate(0);
     margin-top: 10%
   }
+
+  .members .card {
+    max-width: 165px;
+    max-height: 300px;
+  }
+
+  .members .employee h5 {
+    font-size: 16px;
+    max-width: 160px;
+    min-width: unset;
+  }
+  .members p { font-size: 12px }
+  .employee { padding: 5px }
+  .team_imgs { height: 165px }
 }
 
 /* Parteners */
