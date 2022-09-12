@@ -105,28 +105,28 @@ export default function Home() {
             <div className='row'>
               <div className='col-xs-12 col-sm-6 col-md-4 col-lg-4'>
                 <h6>{t.our_value.empowerment.title}</h6>
-                <p>{t.our_value.empowerment.desc}</p>
+                <p pAr>{t.our_value.empowerment.desc}</p>
               </div>
               <div className='col-xs-12 col-sm-6 col-md-4 col-lg-4'>
                 <h6>{t.our_value.respectTheTime.title}</h6>
-                <p>{t.our_value.respectTheTime.desc}</p>
+                <p pAr>{t.our_value.respectTheTime.desc}</p>
               </div>
               <div className='col-xs-12 col-sm-6 col-md-4 col-lg-4'>
                 <h6>{t.our_value.honesty.title}</h6>
-                <p>{t.our_value.honesty.desc}</p>
+                <p pAr>{t.our_value.honesty.desc}</p>
               </div>
 
               <div className='col-xs-12 col-sm-6 col-md-4 col-lg-4'>
                 <h6>{t.our_value.employeeLoyalty.title}</h6>
-                <p className={`${main.p}`}>{t.our_value.employeeLoyalty.desc}</p>
+                <p className={`${main.p} pAr`}>{t.our_value.employeeLoyalty.desc}</p>
               </div>
               <div className='col-xs-12 col-sm-6 col-md-4 col-lg-4'>
                 <h6>{t.our_value.teamWork.title}</h6>
-                <p className={`${main.p}`}>{t.our_value.teamWork.desc}</p>
+                <p className={`${main.p} pAr`}>{t.our_value.teamWork.desc}</p>
               </div>
               <div className='col-xs-12 col-sm-6 col-md-4 col-lg-4'>
                 <h6>{t.our_value.perseverance.title}</h6>
-                <p className={`${main.p}`}>{t.our_value.perseverance.desc}</p>
+                <p className={`${main.p} pAr`}>{t.our_value.perseverance.desc}</p>
               </div>
             </div>
           </div>

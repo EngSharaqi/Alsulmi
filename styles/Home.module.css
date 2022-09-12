@@ -16,7 +16,8 @@
 
 .banner .cover section {
   transform: translate(0, 50%);
-  display: block
+  display: block;
+  width: 100%
 }
 
 .banner h1, .banner p {
@@ -44,6 +45,10 @@
 .overview .btn_srvs:hover a { color: #fff }
 
 .overview img { max-width: 100% }
+
+.overview .column { align-items: center }
+
+.overview .column img { width: 20vw }
 
 /* Our value */
 .our_value {
@@ -214,7 +219,9 @@
 /* banner */
 @media(max-width: 500px){ .banner h1 { font-size: 2rem } }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
+  .overview .column img { width: 65%; margin: 0 auto }
+
   .banner .custReverse { flex-direction: column-reverse !important; text-align: center }
 
   .overview .column { flex-direction: column-reverse }
@@ -244,6 +251,9 @@
   .banner .custReverse {
     transform: translate(0, 50%)
   }
+
+  .free_service .img { height: initial }
+
 }
 
 @media(max-width:767px) and (max-height: 768px) {
@@ -271,4 +281,6 @@
     transform: translateX(calc(-250px * 7));
   }
 }
+
+
 
