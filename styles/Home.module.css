@@ -235,18 +235,23 @@
   }
 
   .members .card {
-    max-width: 165px;
+    min-width: 220px;
     max-height: 300px;
   }
 
   .members .employee h5 {
     font-size: 16px;
-    max-width: 160px;
+    max-width: 220px;
+    min-width: unset;
+  }
+
+  .members .employee p {
+    max-width: 220px;
     min-width: unset;
   }
   .members p { font-size: 12px }
   .employee { padding: 5px }
-  .team_imgs { height: 165px }
+  .team_imgs { height: 220px }
 
   .banner .custReverse {
     transform: translate(0, 50%)
