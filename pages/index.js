@@ -41,12 +41,21 @@ export default function Home() {
     slidesToShow: 3,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 999,
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
+          centerPadding: '30px',
+          slidesToShow: 2
+        }
+      },
+      {  
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '20px',
+          slidesToShow: 1
         }
       },
       {
@@ -54,7 +63,7 @@ export default function Home() {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '20px',
           slidesToShow: 1
         }
       }
@@ -258,35 +267,39 @@ export default function Home() {
       {/* Testimonials */}
       <div className={`row ${main.testemonials}`} id='testimonials'>
         <div class='container'>
-        <div className="row">
-        
-
-        
-        </div>
-          <div className='row'>
-            <h4>{t.testemonials.title}</h4>
-            <div className='col-xs-12 col-sm-12 col-md-4 col-lg-4' style={{ 'margin-bottom': '15px' }}>
+          <h4>{t.testemonials.title}</h4>
+          <Slider {...settings}>
+            <div style={{ 'margin-bottom': '15px', 'padding': '0 10px' }}>
               <div className={`card ${main.card}`}>
                 <h5>{t.testemonials.a.name}</h5>
                 <p>{t.testemonials.a.title}</p>
                 <small>{t.testemonials.a.desc}</small>
               </div>
             </div>
-            <div className='col-xs-12 col-sm-12 col-md-4 col-lg-4' style={{ 'margin-bottom': '15px' }}>
+            <div style={{ 'margin-bottom': '15px', 'padding': '0 10px' }}>
               <div className={`card ${main.card}`}>
-                <h5>{t.testemonials.b.name}</h5>
-                <p>{t.testemonials.b.title}</p>
-                <small>{t.testemonials.b.desc}</small>
-                </div>
+                <h5>{t.testemonials.a.name}</h5>
+                <p>{t.testemonials.a.title}</p>
+                <small>{t.testemonials.a.desc}</small>
+              </div>
             </div>
-            <div className='col-xs-12 col-sm-12 col-md-4 col-lg-4' style={{ 'margin-bottom': '15px' }}>
+            <div style={{ 'margin-bottom': '15px', 'padding': '0 10px' }}>
               <div className={`card ${main.card}`}>
                 <h5>{t.testemonials.c.name}</h5>
                 <p>{t.testemonials.c.title}</p>
                 <small>{t.testemonials.c.desc}</small>
-                </div>
+              </div>
             </div>
-          </div>
+            <div style={{ 'margin-bottom': '15px', 'padding': '0 10px' }}>
+              <div className={`card ${main.card}`}>
+                <h5>{t.testemonials.c.name}</h5>
+                <p>{t.testemonials.c.title}</p>
+                <small>{t.testemonials.c.desc}</small>
+              </div>
+            </div>
+
+
+          </Slider>
         </div>
       </div>
 

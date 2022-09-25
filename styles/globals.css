@@ -55,3 +55,39 @@ html[lang='ar'] body .bannerAr, html[lang='ar'] body .bannerAr .col-xs-12 h1, ht
 
 html[lang='ar'] body #our_value h6 { font-weight: bold }
 html[lang='ar'] body #our_value p { margin-bottom: 4rem }
+
+button.slick-arrow.slick-prev, button.slick-arrow.slick-next {
+    transform: rotate(-45deg);
+    position: absolute !important;
+    top: 45%;
+    z-index: 9;
+    font-size: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+button.slick-arrow.slick-prev {
+    left: -30px
+}
+
+button.slick-arrow.slick-next {
+    right: -30px;
+}
+
+button.slick-arrow.slick-prev::before, button.slick-arrow.slick-next::before{
+    content: '';
+    color: #000;
+    font-size: 0;
+    border: 10px solid;
+    border-radius: 2px;
+}
+
+button.slick-arrow.slick-prev::before {
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+button.slick-arrow.slick-next::before {
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
