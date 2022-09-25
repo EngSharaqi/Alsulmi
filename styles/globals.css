@@ -57,6 +57,12 @@ html[lang='ar'] body #our_value h6 { font-weight: bold }
 html[lang='ar'] body #our_value p { margin-bottom: 4rem }
 
 /* banner slider */
+html[lang="ar"] body main {
+    direction: ltr
+}
+html[lang="ar"] body main section > div {
+    direction: rtl
+}
 .carousel-control-next, .carousel-control-prev { padding: 0 30px; justify-content: start }
 .carousel-control-next {
     justify-content: end

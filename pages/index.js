@@ -90,7 +90,6 @@ export default function Home() {
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            {/* <img class="d-block w-100" src="..." alt="First slide" /> */}
             <div className={main.img}>
             <div className={main.cover}>
               <div className='container' style={{ 'height': 'inherit' }}>
@@ -118,26 +117,13 @@ export default function Home() {
           </div>
           </div>
           <div class="carousel-item">
-            {/* <img class="d-block w-100" src="..." alt="Second slide" /> */}
             <div className={main.img}>
             <div className={main.cover}>
               <div className='container' style={{ 'height': 'inherit' }}>
                 <div className={`row`} style={{ 'height': '66%' }}>
                   <section>
                     <div className={`row ${main.custReverse}`}>
-                      <div className={`col-xs-12 col-sm-12 col-md-8 col-lg-8`}>
-                        <h1>{t.banner.title} 2</h1>
-                        <p>{t.banner.desc}</p>
-                        <Link href="/">
-                          <a>
-                            <button className={`btn btn-primary`}>{t.banner.contact_btn}</button>
-                            <button className={`btn btn-primary ${main.btn_srvs}`}>{t.banner.servs_btn}</button>
-                          </a>
-                        </Link>
-                      </div>
-                      <div className={`col-xs-12 col-sm-12 col-md-4 col-lg-4`} align='center'>
-                        <img src={banner_img.src} style={{ "max-width": "100%", "margin-bottom": "20px", "width": "120px" }} />
-                      </div>
+                      <h2 className='h1' style={{ 'margin': 'auto', 'color': '#fff' }}>2</h2>
                     </div>
                   </section>
                 </div>
@@ -151,21 +137,9 @@ export default function Home() {
             <div className={main.cover}>
               <div className='container' style={{ 'height': 'inherit' }}>
                 <div className={`row`} style={{ 'height': '66%' }}>
-                  <section>
+                <section>
                     <div className={`row ${main.custReverse}`}>
-                      <div className={`col-xs-12 col-sm-12 col-md-8 col-lg-8`}>
-                        <h1>{t.banner.title} 3</h1>
-                        <p>{t.banner.desc}</p>
-                        <Link href="/">
-                          <a>
-                            <button className={`btn btn-primary`}>{t.banner.contact_btn}</button>
-                            <button className={`btn btn-primary ${main.btn_srvs}`}>{t.banner.servs_btn}</button>
-                          </a>
-                        </Link>
-                      </div>
-                      <div className={`col-xs-12 col-sm-12 col-md-4 col-lg-4`} align='center'>
-                        <img src={banner_img.src} style={{ "max-width": "100%", "margin-bottom": "20px", "width": "120px" }} />
-                      </div>
+                      <h2 className='h1' style={{ 'margin': 'auto', 'color': '#fff' }}>3</h2>
                     </div>
                   </section>
                 </div>
