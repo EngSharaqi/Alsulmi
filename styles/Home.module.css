@@ -26,7 +26,8 @@
 
 .banner a button {
   margin: 0 10px 0 0;
-  min-width: 100px
+  min-width: 125px;
+  padding: .7rem
 }
 
 .banner a { text-decoration: none }
@@ -58,7 +59,8 @@
   text-align: center
 }
 
-.our_value h6 + p { margin-bottom: 2rem; font-size: .9rem }
+.our_value h6 { font-weight: 700; margin-top: 1rem }
+.our_value h6 + p { margin-bottom: 1rem; font-size: .9rem }
 
 /* free service */
 .free_service { text-align: center }

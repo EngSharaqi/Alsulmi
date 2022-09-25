@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Slider from "react-slick";
 import Link from 'next/link'
 import main from '../styles/Home.module.css'
 import { useRouter } from "next/router";
@@ -33,7 +34,34 @@ import yosef_alsulmi from '../public/images/team/yosef_alsulmi.jpg'
 export default function Home() {
   var router = useRouter();
   let t = router.locale === 'en' ? en : ar;
+
+  const settings = {
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  };
   return (
+
     <>
       <Head>
         <title>{t.title.home}</title>
@@ -42,9 +70,19 @@ export default function Home() {
       </Head>
 
       {/* cover */}
+   
       <main className={`${main.banner} bannerAr`}>
-        <div className='row'>
-          <div className={main.img}>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            {/* <img class="d-block w-100" src="..." alt="First slide" /> */}
+            <div className={main.img}>
             <div className={main.cover}>
               <div className='container' style={{ 'height': 'inherit' }}>
                 <div className={`row`} style={{ 'height': '66%' }}>
@@ -61,7 +99,7 @@ export default function Home() {
                         </Link>
                       </div>
                       <div className={`col-xs-12 col-sm-12 col-md-4 col-lg-4`} align='center'>
-                        <img src={banner_img.src} style={{ "max-width": "100%", "margin-bottom": "20px" }} />
+                        <img src={banner_img.src} style={{ "max-width": "100%", "margin-bottom": "20px", "width": "120px" }} />
                       </div>
                     </div>
                   </section>
@@ -69,7 +107,74 @@ export default function Home() {
               </div>
             </div>
           </div>
+          </div>
+          <div class="carousel-item">
+            {/* <img class="d-block w-100" src="..." alt="Second slide" /> */}
+            <div className={main.img}>
+            <div className={main.cover}>
+              <div className='container' style={{ 'height': 'inherit' }}>
+                <div className={`row`} style={{ 'height': '66%' }}>
+                  <section>
+                    <div className={`row ${main.custReverse}`}>
+                      <div className={`col-xs-12 col-sm-12 col-md-8 col-lg-8`}>
+                        <h1>{t.banner.title} 2</h1>
+                        <p>{t.banner.desc}</p>
+                        <Link href="/">
+                          <a>
+                            <button className={`btn btn-primary`}>{t.banner.contact_btn}</button>
+                            <button className={`btn btn-primary ${main.btn_srvs}`}>{t.banner.servs_btn}</button>
+                          </a>
+                        </Link>
+                      </div>
+                      <div className={`col-xs-12 col-sm-12 col-md-4 col-lg-4`} align='center'>
+                        <img src={banner_img.src} style={{ "max-width": "100%", "margin-bottom": "20px", "width": "120px" }} />
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            {/* <img class="d-block w-100" src="..." alt="Third slide" /> */}
+            <div className={main.img}>
+            <div className={main.cover}>
+              <div className='container' style={{ 'height': 'inherit' }}>
+                <div className={`row`} style={{ 'height': '66%' }}>
+                  <section>
+                    <div className={`row ${main.custReverse}`}>
+                      <div className={`col-xs-12 col-sm-12 col-md-8 col-lg-8`}>
+                        <h1>{t.banner.title} 3</h1>
+                        <p>{t.banner.desc}</p>
+                        <Link href="/">
+                          <a>
+                            <button className={`btn btn-primary`}>{t.banner.contact_btn}</button>
+                            <button className={`btn btn-primary ${main.btn_srvs}`}>{t.banner.servs_btn}</button>
+                          </a>
+                        </Link>
+                      </div>
+                      <div className={`col-xs-12 col-sm-12 col-md-4 col-lg-4`} align='center'>
+                        <img src={banner_img.src} style={{ "max-width": "100%", "margin-bottom": "20px", "width": "120px" }} />
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
       </main>
 
       {/* Overview section */}
@@ -99,7 +204,7 @@ export default function Home() {
             <div className='row'>
               <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
                 <h4>{t.our_value.title}</h4>
-                <p>{t.our_value.desc}</p>
+                <p style={{ "margin-bottom": "2rem" }}>{t.our_value.desc}</p>
               </div>
             </div>
             <div className='row'>
@@ -153,6 +258,11 @@ export default function Home() {
       {/* Testimonials */}
       <div className={`row ${main.testemonials}`} id='testimonials'>
         <div class='container'>
+        <div className="row">
+        
+
+        
+        </div>
           <div className='row'>
             <h4>{t.testemonials.title}</h4>
             <div className='col-xs-12 col-sm-12 col-md-4 col-lg-4' style={{ 'margin-bottom': '15px' }}>
