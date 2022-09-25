@@ -76,13 +76,13 @@
 
 /* Testemonials */
 
-.testemonials { margin-bottom: calc(3rem - 15px) } 
+.testemonials { margin-bottom: calc(3rem - 25px) } 
 
 .testemonials .card {
   height: 100%;
   text-align: center;
   align-items: center;
-  margin: 0 15px 10px 0;
+  margin: 10px 15px 10px 0;
   padding: 1.5rem;
   justify-content: start;
   margin-bottom: 1rem;
@@ -217,7 +217,7 @@
 
 @media(max-width: 767px){
   .FCard { text-align: center !important; margin: 5px 0; }
-  .card { width: 100% !important }
+  .card { width: auto !important }
 }
 
 
@@ -273,7 +273,11 @@
   }
 }
 
-
+@media(min-width: 991px) and (max-width: 1199px){
+  .testemonials .card {
+    min-height: 240px
+  }
+}
 /* Parteners */
 @keyframes scroll {
   0% {
@@ -292,6 +296,3 @@
     transform: translateX(calc(-250px * 7));
   }
 }
-
-
-

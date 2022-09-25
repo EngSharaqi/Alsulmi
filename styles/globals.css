@@ -76,7 +76,7 @@ button.slick-arrow.slick-next {
 
 button.slick-arrow.slick-prev::before, button.slick-arrow.slick-next::before{
     content: '';
-    color: #000;
+    color: #377dff2b;
     font-size: 0;
     border: 10px solid;
     border-radius: 2px;
