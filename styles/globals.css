@@ -10,8 +10,8 @@ html body {
     font-family: Cairo, Arial, Georgia, Times, 'Times New Roman', serif
 }
 
-html[lang='ar'] body p, html[lang='ar'] body #testimonials p {
-    line-height: 2
+body p, body #testimonials p {
+    line-height: 1.5
 }
 
 html[lang='ar'] body #testimonials p {
@@ -56,6 +56,19 @@ html[lang='ar'] body .bannerAr, html[lang='ar'] body .bannerAr .col-xs-12 h1, ht
 html[lang='ar'] body #our_value h6 { font-weight: bold }
 html[lang='ar'] body #our_value p { margin-bottom: 4rem }
 
+/* banner slider */
+.carousel-control-next, .carousel-control-prev { padding: 0 30px; justify-content: start }
+.carousel-control-next {
+    justify-content: end
+}
+
+@media(max-width: 1120px){
+    .carousel-control-next, .carousel-control-prev {
+        display: none !important
+    }
+}
+
+/* Testimonials slider */
 button.slick-arrow.slick-prev, button.slick-arrow.slick-next {
     transform: rotate(-45deg);
     position: absolute !important;
